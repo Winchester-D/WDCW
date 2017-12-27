@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form44" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="384"/>
+      <import value="java.lang.Object"/>
+	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
+	<import value="java.lang.String"/>
+	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select * from form44;]]>
+	</queryString>
+	<field name="cpCname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpGname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpResidence" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpProfile" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpCommittee" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpSection" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpTerm" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpday" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpMon" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpYr" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpInstitution" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIplace" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpInst" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpAuthority" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpRdischarge" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDated" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDperson" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpEdate" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpConsent" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpScname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpSi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpSaname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpChname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDischarge" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="107" splitType="Stretch">
+			<staticText>
+				<reportElement x="241" y="61" width="70" height="20" />
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FORM 44 ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="241" y="0" width="78" height="61" />
+				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="432" y="17" width="100" height="50" />
+				<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+createLinear(3, "123456789"))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="211" y="81" width="122" height="20" />
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[     [Rule 82 (1)] ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="47" y="12" width="521" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                                          RELEASE CUM RESTORATION ORDER]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="15" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="438" splitType="Stretch">
+			<staticText>
+				<reportElement x="12" y="10" width="533" height="196" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[         (Name of the Child)……………….son/ daughter of……………………… residence…………………..
+Case No./ Profile Number……………….. who was ordered to be placed in an observation home/place of
+safety/ special home/Children’s Home/ by the Juvenile Justice Board/ Children’s Court/ Child Welfare
+Committee ………………….under section…………….. of the Juvenile Justice (Care and Protection of
+Children) Act 2015, for a term of……………… on the ………………..day of……………..20…………….and
+who is now in the …………………. Institution, at…………………..is directed to be released from the
+said………Institution and supervision and the authority of…………….. during the remaining period of stay
+as…………………………..reason for discharge).
+          This order is granted subject to the conditions hereon, upon the breach of any of which it shall be
+liable to be revoked.
+Dated ………….
+Signature
+Juvenile Justice Board/ Children’s Court/ Child Welfare Committee
+Place:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="206" width="533" height="216" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Conditions:
+1. The discharged person shall proceed to………………. and live under the supervision and authority
+of…………………… until the expiry of the period of his stay in Children’s Homes or fit facility/ detention in
+observation home/ special homes/ place of safety unless the remission is sooner cancelled.
+2. He shall not, without the consent of the………………..remove himself from that place or any other place,
+which may be named by the said ………………...
+3. He shall obey such instruction as he may receive from the said ………………………………with regard to
+punctual and regular attendance at school/vocation or otherwise.
+4. He shall not get involved in any offence and shall lead a sober and industrious life to the satisfaction
+of………………………………..
+6. In the event of his committing a breach of any of the above conditions the remission of the period of stay
+in the Institution hereby granted shall be liable to be cancelled and on such cancellation he/she shall be
+dealt with under section 97 of the Juvenile Justice (Care & Protection of Children) Act 2015.
+I hereby acknowledge that I am aware of the above conditions which have been read over/ explained to me
+and that I accept the same. ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="138" y="10" width="66" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpCname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="10" width="68" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpGname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="10" width="81" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpResidence}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="23" width="70" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpProfile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="68" y="50" width="89" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpCommittee}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="218" y="50" width="76" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpSection}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="65" width="68" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpTerm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="65" width="58" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpday}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="65" width="52" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpMon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="65" width="40" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpYr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="78" width="78" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpInstitution}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="265" y="78" width="68" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpIplace}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="34" y="90" width="49" height="18" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpInst}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="93" width="79" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpAuthority}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="66" y="106" width="89" height="22" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpRdischarge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="55" y="147" width="68" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpDated}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="219" y="220" width="68" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpDperson}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="232" width="64" height="18" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpEdate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="219" y="258" width="68" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpConsent}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="277" width="78" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpScname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="287" width="50" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpSi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="55" y="330" width="79" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpSaname}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="19" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="122" splitType="Stretch">
+			<staticText>
+				<reportElement x="12" y="10" width="533" height="102" />
+				<textElement>
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[                                                (Signature or mark of the released child) 
+Certified that the conditions specified in the above order have been read over/explained to (Name
+of child)……………………..and that he/she has accepted them as the conditions upon which his/her release
+may be revoked.
+Certified accordingly that the said child has been discharged on the………………….
+                                       Signature and Designation of the certifying authority 
+                                                i.e. Person-in-charge of the institution ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="66" y="37" width="75" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpChname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="64" width="87" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpDischarge}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="20" splitType="Stretch"/>
+	</summary>
+</jasperReport>

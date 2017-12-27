@@ -1,0 +1,272 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: suresh -->
+ 
+<struts>
+    <package name="com/cdac/ccl/Actions" namespace="/" extends="struts-default">
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
+                        <result-type name="json" class="org.apache.struts2.json.JSONResult"/>
+		</result-types>
+                
+    <interceptors>
+        <interceptor name="requestCheckInterceptor" class="com.cdac.common.interceptors.RequestCheckInterceptor"/> 
+        <interceptor name="roleCheckInterceptor"    class="com.cdac.common.interceptors.RoleCheckInterceptor" />    
+        
+                <interceptor-stack name="loggingStack">                                      
+                    
+                    <interceptor-ref name="requestCheckInterceptor" />
+                    <interceptor-ref name="roleCheckInterceptor"/>                      
+                    <interceptor-ref name="defaultStack" />
+                </interceptor-stack>
+ 
+         
+             <!--new code-->
+                <interceptor-stack name="fileUploadStack">
+<interceptor-ref name="exception" />
+<interceptor-ref name="alias" />
+<interceptor-ref name="servletConfig" />
+<interceptor-ref name="prepare" />
+<interceptor-ref name="i18n" />
+<interceptor-ref name="chain" />
+<interceptor-ref name="debugging" />
+<interceptor-ref name="profiling" />
+<interceptor-ref name="scopedModelDriven" />
+<interceptor-ref name="modelDriven" />
+<interceptor-ref name="fileUpload">
+<param name="maximumSize">3000000</param>
+<param name="allowedTypes"> image/jpeg,image/gif,image/png</param>
+</interceptor-ref>
+<interceptor-ref name="checkbox" />
+<interceptor-ref name="staticParams" />
+<interceptor-ref name="actionMappingParams" />
+<interceptor-ref name="params">
+<param name="excludeParams"> dojo\..*,^struts\..*</param>
+</interceptor-ref>
+<interceptor-ref name="conversionError" />
+<interceptor-ref name="validation">
+<param name="excludeMethods"> input,back,cancel,browse</param>
+</interceptor-ref>
+<interceptor-ref name="workflow">
+<param name="excludeMethods"> input,back,cancel,browse</param>
+</interceptor-ref>
+
+<interceptor-ref name="requestCheckInterceptor"/>
+</interceptor-stack>
+         </interceptors>
+    
+             
+        <action name="CCL-Home">
+          <interceptor-ref name="loggingStack"/>   
+            <result name="logout" type="tiles">CCL-Logout</result>
+            <result name="success" type="tiles">CCL-Home</result>      
+
+      </action>
+      
+        <action name="CCL-DataEntry">
+          <interceptor-ref name="loggingStack"/>   
+            <result name="logout" type="tiles">CCL-Logout</result>
+            <result name="success" type="tiles">CCL-DataEntry</result>      
+
+        </action>
+       
+        <action name="CCL-Reports">
+          <interceptor-ref name="loggingStack"/>   
+            <result name="logout" type="tiles">CCL-Logout</result>
+            <result name="success" type="tiles">CCL-Reports</result>      
+
+        </action>
+         <!--************************====************************====************************=== 
+                   ====********************FORM 3 MAPPING************************==== 
+        ************************====************************====************************====-->      
+     
+   <action name="CCL_Form3" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="getReportFoundChild">
+            <result name="success">/WEB-INF/CCL/CCL_Form3.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>
+        
+        <action name="CCL_Form3de" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="CCL_Meetings3Formde">
+           
+            <result name="success">/WEB-INF/CCL/CCL_Form3de.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>
+        
+        <action name="form3desave" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="form3desave">
+           
+            <result name="success">/WEB-INF/CCL/form3desave.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>            
+        <!--************************====************************====************************=== 
+                   ====********************FORM 4 MAPPING************************==== 
+        ************************====************************====************************====-->      
+     
+   <action name="CCL_Form4" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="getReportFoundChild">
+            <result name="success">/WEB-INF/CCL/CCL_Form4.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>
+        
+        <action name="CCL_Form4de" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="CCL_Meetings4Formde">
+           
+            <result name="success">/WEB-INF/CCL/CCL_Form4de.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>
+        <action name="form4desave" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="form4desave">
+           
+            <result name="success">/WEB-INF/CCL/form4desave.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>       
+     
+        <!--************************====************************====************************=== 
+                   ====********************FORM 5 MAPPING************************==== 
+        ************************====************************====************************====-->      
+     
+   <action name="CCL_Form5" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="getReportFoundChild">
+            <result name="success">/WEB-INF/CCL/CCL_Form5.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>
+        
+        <action name="CCL_Form5de" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="CCL_Meetings5Formde">
+           
+            <result name="success">/WEB-INF/CCL/CCL_Form5de.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>
+        <action name="form5desave" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="form5desave">
+           
+            <result name="success">/WEB-INF/CCL/form5desave.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>   
+         <!--************************====************************====************************=== 
+                   ====********************FORM 8 MAPPING************************==== 
+        ************************====************************====************************====-->      
+     
+   <action name="CCL_Form8" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="getReportFoundChild">
+            <result name="success">/WEB-INF/CCL/CCL_Form8.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>
+        
+        <action name="CCL_Form8de" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="CCL_Meetings8Formde">
+           
+            <result name="success">/WEB-INF/CCL/CCL_Form8de.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>
+        <action name="CCL_Form8desave" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="CCL_Form8desave">
+           
+            <result name="success">/WEB-INF/CCL/CCL_Form8desave.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>   
+        <!--************************====************************====************************=== 
+                   ====********************FORM 9 MAPPING************************==== 
+        ************************====************************====************************====-->      
+     
+   <action name="CCL_Form9" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="getReportFoundChild">
+            <result name="success">/WEB-INF/CCL/CCL_Form9.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>
+        
+        <action name="CCL_Form9de" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="CCL_Meetings9Formde">
+           
+            <result name="success">/WEB-INF/CCL/CCL_Form9de.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>
+        <action name="form9desave" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="form9desave">
+           
+            <result name="success">/WEB-INF/CCL/form9desave.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>     
+        
+                                                                                                                                                                                                                                                                
+    
+     <!--************************====************************====************************=== 
+                   ====********************FORM 10 MAPPING************************==== 
+        ************************====************************====************************====-->
+      
+    <action name="CCLForm10rep" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="getForm10">
+          <interceptor-ref name="loggingStack"/>   
+        <result name="logout" type="tiles">UM-Logout</result>
+        <result name="success"  type="stream">
+            <param name="contentType">application/pdf</param>
+            <param name="inputName">is10</param>
+            <param name="contentDisposition">filename="Form10.pdf"</param>
+            <param name="bufferSize">1024</param>
+        </result>
+        <result name="error" type="tiles">CWC-Error</result>
+    </action>
+      
+      
+           <!--************************====************************====************************=== 
+                   ====********************FORM 42 MAPPING************************==== 
+        ************************====************************====************************====-->
+          <!--************************====************************====************************=== 
+                   ====********************FORM 42 MAPPING************************==== 
+        ************************====************************====************************====-->
+         <action name="CCL_Form42rep" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="overProStay">
+            <result name="success">/WEB-INF/CCL/CCL_Form42rep.jsp</result>
+            <result name="error">CW-Error</result>
+        </action> 
+        
+            <action name="CCL_Form42" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="getReportFoundChild">
+            <result name="success">/WEB-INF/CCL/CCL_Form42.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>
+        
+        <action name="CCL_Form42de" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="CCL_Meetings42Formde">
+           
+            <result name="success">/WEB-INF/CCL/CCL_Form42de.jsp</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>
+        <action name="form42desave" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="form42desave">
+           
+            <result name="success">CW-Success</result>
+            <result name="error" type="tiles">CW-Error</result>
+        </action>
+           <action name="CCLForm42rep" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="getForm42">
+          <interceptor-ref name="loggingStack"/>   
+        <result name="logout" type="tiles">UM-Logout</result>
+        <result name="success"  type="stream">
+            <param name="contentType">application/pdf</param>
+            <param name="inputName">is42</param>
+            <param name="contentDisposition">filename="Form42.pdf"</param>
+            <param name="bufferSize">1024</param>
+        </result>
+        <result name="error" type="tiles">CWC-Error</result>
+    </action>
+      
+    
+        
+     <!--************************====************************====************************=== 
+                   ====********************FORM 44 MAPPING************************==== 
+        ************************====************************====************************====-->
+            <action name="CCLForm44rep" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="getForm44">
+          <interceptor-ref name="loggingStack"/>   
+        <result name="logout" type="tiles">UM-Logout</result>
+        <result name="success"  type="stream">
+            <param name="contentType">application/pdf</param>
+            <param name="inputName">is44</param>
+            <param name="contentDisposition">filename="Form44.pdf"</param>
+            <param name="bufferSize">1024</param>
+        </result>
+        <result name="error" type="tiles">CWC-Error</result>
+    </action>
+  
+     
+     <!--************************====************************====************************=== 
+                   ====********************FORM 45 MAPPING************************==== 
+        ************************====************************====************************====-->
+        
+        <action name="CCLForm45rep" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="getForm45">
+          <interceptor-ref name="loggingStack"/>   
+        <result name="logout" type="tiles">UM-Logout</result>
+        <result name="success"  type="stream">
+            <param name="contentType">application/pdf</param>
+            <param name="inputName">is45</param>
+            <param name="contentDisposition">filename="Form45.pdf"</param>
+            <param name="bufferSize">1024</param>
+        </result>
+        <result name="error" type="tiles">CWC-Error</result>
+    </action>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                
+    </package>
+</struts>            

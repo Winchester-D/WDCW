@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form8" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+         <import value="java.lang.Object"/>
+	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
+	<import value="java.lang.String"/>
+	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select * from form8]]>
+	</queryString>
+	<field name="whereas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="care" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="board" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rs1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="said" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="of" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="from" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rs2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rs3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="day" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="we" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="of1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="af" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="case1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rs4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rs5" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="day1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="year1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<image>
+				<reportElement x="231" y="10" width="63" height="61" />
+				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="420" y="10" width="100" height="50" />
+				<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+createLinear(3, "123456789"))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="75" width="566" height="58" />
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                                                                               FORM 8
+                                                                            [Rule 11(6)]
+UNDERTAKING/ BOND TO BE EXECUTED BY A PARENT/ GUARDIAN/ /FIT PERSON IN WHOSE CARE
+                                               A CHILD IN CONFLICT WITH LAW IS PLACED]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="133" width="516" height="401" />
+				<textElement>
+					<font size="10"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[             Whereas I, ……………………. being  the  parent,  guardian,  relative  or  fit  person  under  whose
+care……………………….. (name of the child )  has  been ordered  to  be  placed  by  the  Juvenile  Justice
+Board………………………… having been directed by the said Board to execute an undertaking/ bond with
+surety in the sum of Rs………../- (Rupees……………………………………)  or  without surety, I hereby bind
+myself to be responsible for the good behavior and well-being of the said …………………. and  to  observe
+the following conditions for a period of ………………… years with effect from …………………………...
+1.      That I shall not change my place of  residence  without  giving  previous  intimation  in  writing  to  the
+         Juvenile Justice Board through the Probation Officer;
+2.      That I shall not remove the said child from the limits of the jurisdiction of  the  Juvenile  Justice  Board
+         without previously obtaining the written permission of the Board;
+3.      That I shall send the said child daily to school/to such vocation as  is  approved by  the  Board  unless
+          prevented from so doing by circumstances beyond control;
+4.       That I shall sincerely give effect to the Individual Care  Plan  with the  help  of  the  Probation  Officer;
+5.       That I shall report immediately to the Board whenever so required by  it and also  produce  the  child
+          before the Board as and when directed to do so;
+6.       That I shall produce the said child in my care before the Board, if he/she does not follow the orders of
+          Board or his/her behavior is beyond my control;
+7.       That I shall report to the Board if the child goes out of  my  control  or  charge;
+8.       That I shall render all necessary assistance to the  Probation  Officer to  enable  him to carry  out  the
+          duties of supervision;
+In the event of my making default herein, I undertake to appear before the Board and bind myself to  pay  to
+Government the sum of Rs ……………….. (Rupees…………………………….).
+Dated this ………………..day of ……………………………..20.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="253" y="534" width="313" height="41" />
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Signature of person executing the Undertaking/Bond.
+                                                          (Signed before me)
+Principal Magistrate/ Member Juvenile Justice  Board]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="575" width="566" height="154" />
+				<textElement>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Additional conditions,  if  any, by  the  Juvenile  Justice  Board  may  be  entered  numbering  them  properly;
+(Where a bond with sureties is to executed add)
+I/We …………………………..of ………………………(place of residence with full particulars )  hereby  declare
+myself/ourselves as surety/sureties  for  the  aforesaid  ……………….. ( name  of  the  person  executing  the
+undertaking/bond  )   to   adhere   to   the   terms   and   condition s  of   this   undertaking/bond.   In  case  of
+………………….(  name   of   the  person   executing   the  bond )   making  fault  therein,  I/We  hereby  bind
+myself/ourselves jointly or severally to forfeit to government the sum of Rs………………/-
+(Rupees…………………………….) dated this the……….. day of …………….20…………..in the  presence  of
+…………………………]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="253" y="729" width="313" height="42" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[                                                  Signature of Surety(ties)
+                                                           (Signed before me)
+Principal Magistrate/ Member, Juvenile Justice Board]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="134" y="133" width="63" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{whereas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="149" width="42" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{care}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="166" width="50" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{board}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="184" width="30" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{rs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="256" y="184" width="38" height="17" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{rs1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="388" y="201" width="42" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{said}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="231" y="217" width="32" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{of}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="217" width="45" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{from}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="168" y="499" width="38" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{rs2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="305" y="499" width="36" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{rs3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="94" y="518" width="44" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="206" y="520" width="42" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{day}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="85" y="605" width="38" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{we}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="189" y="607" width="42" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{of1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="305" y="624" width="34" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{af}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="660" width="47" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{case1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="386" y="676" width="34" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{rs4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="693" width="36" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{rs5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="253" y="695" width="47" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{date1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="325" y="696" width="46" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{day1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="391" y="696" width="47" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{year1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="51" y="712" width="36" height="16" />
+				<textFieldExpression><![CDATA[$F{pre}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

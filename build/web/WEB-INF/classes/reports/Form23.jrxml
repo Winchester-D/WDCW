@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form23" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="318"/>
+     <import value="java.lang.Object"/>
+	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
+	<import value="java.lang.String"/>
+	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select * from form23]]>
+	</queryString>
+	<field name="cpDate" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDistrict" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpAname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpRname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpCname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpCage" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpReason" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpNameAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpCmname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDate1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpTime" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpPlace" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="141" splitType="Stretch">
+			<staticText>
+				<reportElement x="230" y="89" width="70" height="20" />
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FORM 23 ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="230" y="17" width="78" height="61" />
+				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="432" y="17" width="100" height="50" />
+				<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+createLinear(3, "123456789"))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="200" y="109" width="108" height="20" />
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[     [Rule 19(22)]]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="14" y="11" width="443" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                                       APPLICATION FOR SURRENDER OF CHILD]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="179" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="30" width="555" height="87" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[  To 
+                Child Welfare Committee, 
+                District………………. 
+                I/ We……………….........(name    of    the    applicant/s).... ……………. (relation    with    the    child) 
+   of…………… ….(name of the child), aged about……….years , intend to surrender…………………..name of
+   child) before this Child Welfare Committee as………………………………………………………...(reason/s for                                           ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="117" width="555" height="59" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[                I/we am /are fully conscious  and  making  this  application  before  this Child Welfare Committee. I 
+   have     not     been     forced     or     unduly     influenced     by    any    one    to    take    this    decision   of 
+   surrendering……………………... (name of child). I  shall have no objection if the child is given in adoption. I
+   am fully aware of the consequences of surrendering the child.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="14" width="141" height="14" />
+				<text><![CDATA[           Date ………. ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="471" y="12" width="59" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="91" y="55" width="70" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpDistrict}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="68" width="80" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpAname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="324" y="68" width="81" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpRname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="24" y="84" width="78" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpCname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="84" width="70" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpCage}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="84" width="80" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpCname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="278" y="97" width="80" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpReason}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="144" width="80" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpCname}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="31" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="156" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="141" />
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                                                                                                                     Full signature of the applicant(s)/
+                                                                                     Thumb impression (if the CWC deems appropriate)
+    Name and address.
+    …………………………….
+                                                                                                          (Signature of the Chairperson/ member
+                                                                                                 Before whom such application is submitted)
+                                                                                 Committee member/s present:____________________
+    Date…………………..
+    Time……………………
+    Place…………………..]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="14" y="41" width="100" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpNameAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="80" width="87" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpCmname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="96" width="74" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpDate1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="110" width="62" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="50" y="124" width="74" height="18" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpPlace}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

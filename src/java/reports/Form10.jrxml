@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form10" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+          <import value="java.lang.Object"/>
+	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
+	<import value="java.lang.String"/>
+	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select * from Form10]]>
+	</queryString>
+	<field name="cpFirno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpPstaion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpUsec" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpMatter" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpVs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpAge" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDate" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpCare" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpPname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpRegno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpAgeapp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpGender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpTname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpTfname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpTreligion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpTeducation" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpTvt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpTlk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpTncd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpTemp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpTdoa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpCds" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDay" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpMon" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpYr" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpParent" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpBehavior" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpHstatus" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpRelationcf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpRelationf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpSafety" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpCdifficulty" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpFdifficulty" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpHhold" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpVT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpMiscellaneous" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpTime" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpSname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpTpmet" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpUnusual" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpFeed" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpPeerAtt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpChildAtt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpWork" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpHours" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpChattw" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpViolation" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpNreason" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpRehab" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpPrepare" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpProbationD" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpProbationM" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpProbationY" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDonv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpAp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="107" splitType="Stretch">
+			<staticText>
+				<reportElement x="241" y="61" width="70" height="20" />
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FORM 10 ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="241" y="0" width="78" height="61" />
+				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="432" y="17" width="100" height="50" />
+				<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+createLinear(3, "123456789"))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="168" y="81" width="225" height="20" />
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[     [Rules 11(9) and 64 (3) (xiii)]]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="10" width="544" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ PERIODIC REPORT BY PROBATION OFFICER WHEN A CHILD IS RELEASED ON PROBATION]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="15" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="607" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="11" width="534" height="80" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[FIR No……………. Police Station …………..U/Sections……………
+In the matter of……………….. vs……………………………………
+Whereas (name of the child) ………………….., age…………, has on……. (date) been found to be a
+child in conflict with law, and has been placed under the care of ……………… (parent/ guardian/ fit
+person/fit facility) and under the supervision of …………………(name of Probation Officer)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="11" y="91" width="534" height="165" />
+			</rectangle>
+			<line>
+				<reportElement x="11" y="122" width="534" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="23" y="92" width="110" height="20" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Reg. No. :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="77" y="92" width="68" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpRegno}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="160" y="91" width="1" height="165" />
+			</line>
+			<staticText>
+				<reportElement x="171" y="92" width="111" height="20" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Age (approximately) :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="282" y="92" width="67" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpAgeapp}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="359" y="92" width="1" height="164" />
+			</line>
+			<staticText>
+				<reportElement x="370" y="92" width="100" height="20" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Sex:- Male / Female /]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="470" y="92" width="75" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpGender}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="11" y="143" width="534" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="23" y="123" width="42" height="20" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Name :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="65" y="123" width="74" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpTname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="171" y="123" width="81" height="20" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Fathers Name:-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="252" y="123" width="100" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpTfname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="370" y="123" width="48" height="20" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Religion:-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="418" y="123" width="100" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpTreligion}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="23" y="144" width="64" height="20" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Education: -]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="23" y="164" width="96" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpTeducation}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="171" y="141" width="140" height="20" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Vocational Training, if any]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="171" y="164" width="50" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpTvt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="370" y="144" width="110" height="20" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Language(s) known:-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="370" y="164" width="48" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpTlk}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="11" y="184" width="534" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="23" y="185" width="100" height="20" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Next court date:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="171" y="185" width="97" height="20" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Employment, if any]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="185" width="162" height="20" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Date of admission (in case of fit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="205" width="84" height="20" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[person/fit facility)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="23" y="205" width="100" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpTncd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="205" width="100" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpTemp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="225" width="62" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpTdoa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="11" y="266" width="534" height="70" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Case details and summary
+…………………………………………………………………………………………………
+…………………………………………………………………………………………………
+………………………………………………………………………………………………….]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="336" width="534" height="60" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[1. Preliminary details:
+  (i) Visit Date: ………………./…………………../………………………..
+  (ii) Name of Parent / Guardian……………………………………………………….
+  (iii) Names of Other Adults Living in the Home and with whom the Probation Officer interacted:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="396" width="534" height="200" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[2. Observations:
+  (i) Child’s behaviors……………………………………………………………………..
+  (ii) Physical and mental health status/needs of child and family…………………….
+  (iii) Inter-personal relationship of the child with the family…………………………….
+  (iv) Inter-personal relationship with friends……………………………………………..
+  (v) Safety and supervision in the family………………………………………………...
+  (vi) Difficulties faced by the child……………………………………………………….
+  (vii) Difficulties faced by the family……………………………………………………..
+  (viii) Changes in the household…………………………………………………………
+  (ix) Vocational training, if any being undertaken by the child……………………….
+  (x) Engagement of child in any anti-social activities or harmful activities (Examples could be exhibiting
+  bullying behaviour, violent outbursts, destructions, self-harm, lying, defiance, impulsiveness, lack of
+  empathy, sexually deviant actions etc.)……………………………………………………………………
+  (xi) Time elapsed since last engagement in any anti-social behavior or harmful activities………………….]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="45" y="11" width="56" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpFirno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="161" y="11" width="80" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpPstaion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="282" y="11" width="67" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpUsec}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="87" y="25" width="73" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpMatter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="182" y="25" width="59" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpVs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="41" width="69" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="259" y="35" width="52" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpAge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="349" y="35" width="58" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="319" y="55" width="63" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpCare}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="241" y="69" width="64" height="22" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpPname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="19" y="294" width="388" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpCds}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="82" y="350" width="51" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpDay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="159" y="350" width="52" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpMon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="252" y="350" width="53" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpYr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="364" width="71" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpParent}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="123" y="408" width="77" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpBehavior}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="332" y="421" width="75" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpHstatus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="437" width="86" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpRelationcf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="241" y="452" width="78" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpRelationf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="232" y="467" width="60" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpSafety}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="221" y="480" width="84" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpCdifficulty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="219" y="494" width="86" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpFdifficulty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="211" y="509" width="60" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpHhold}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="319" y="523" width="51" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpVT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="252" y="559" width="100" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpMiscellaneous}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="572" width="56" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpTime}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="497">
+			<staticText>
+				<reportElement x="19" y="11" width="526" height="377" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[  (i) Name of the school/centre……………………………………………………….
+  (ii) Name of the Teacher / Principal met…………………………………………….
+  (iii) Any unusual behavior observed……………………………………………………
+  (iv) Feedback received on the progress of the child………………………………….
+  (v) Attitude of the peers towards the child…………………………………………..
+  (vi) Attitude of the child towards the peers…………………………………………..
+4. Visit to place of employment:
+  (i) Nature of work………………………………………………………………..
+  (ii) Working hours……………………………………………………………….
+  (iii) Attitude of the child towards work………………………………………..
+  (iv) Violation of any labour laws, Low wages or wages being withheld, if observed and action
+  taken against employer……………………………….
+5. Did you spend time speaking privately with the child Yes  No 
+  If no, give reasons……………………………………..
+6. Progress made as per Rehabilitation and Restoration Plan under the Individual Care Plan (refer point 14
+  of form 7)…………………………………………………………
+  ………………………………………………………………………………………………….
+7. Recommendations for modifications in Rehabilitation and Restoration Plan under the Individual Care Plan
+  , if any:
+  Prepared by: ……………………………………..…
+  (Probation Officer..................... ...…../.….........................../.…. ......................(date)
+  Plan: Date of next visit: ……………………
+  Action point if any: ………………………………
+                                                                                                                                                    Signature
+                                                                                                                                       (Probation Officer)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="211" y="11" width="71" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpSname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="259" y="27" width="73" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpTpmet}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="332" y="41" width="75" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpUnusual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="282" y="54" width="67" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpFeed}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="259" y="70" width="66" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpPeerAtt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="325" y="83" width="68" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpPeerAtt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="168" y="106" width="73" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpChildAtt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="241" y="120" width="64" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpWork}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="232" y="134" width="60" height="17" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpHours}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="168" y="163" width="64" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpChattw}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="190" width="80" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpViolation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="119" y="216" width="70" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpNreason}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="59" y="230" width="64" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpRehab}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="119" y="285" width="89" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpProbationD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="211" y="285" width="94" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpProbationM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="285" width="86" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpProbationY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="145" y="301" width="63" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpDonv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="314" width="49" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpAp}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

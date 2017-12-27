@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form 36" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+         <import value="java.lang.Object"/>
+	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
+	<import value="java.lang.String"/>
+	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select * from form_36]]>
+	</queryString>
+	<field name="name36" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="age36" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mr36" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mrs36" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="needs36" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rs36" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rss36" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="period36" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="child36" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="op36" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="name36">
+		<groupExpression><![CDATA[$F{name36}]]></groupExpression>
+	</group>
+	<group name="age36">
+		<groupExpression><![CDATA[$F{age36}]]></groupExpression>
+	</group>
+	<group name="mr36">
+		<groupExpression><![CDATA[$F{mr36}]]></groupExpression>
+	</group>
+	<group name="mrs36">
+		<groupExpression><![CDATA[$F{mrs36}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="154" splitType="Stretch">
+			<image>
+				<reportElement x="441" y="20" width="100" height="50" />
+			<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+createLinear(3, "123456789"))]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="233" y="9" width="63" height="61" />
+				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="147" y="81" width="252" height="47" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                              FORM 36 
+                           [Rule 24(5)]
+   ORDER OF SPONSORSHIP PLACEMENT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="193" splitType="Stretch">
+			<staticText>
+				<reportElement x="24" y="10" width="169" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[The child (name and address)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="190" y="26" width="100" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="296" y="12" width="23" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[age]]></text>
+			</staticText>
+			<line>
+				<reportElement x="319" y="24" width="100" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="421" y="13" width="74" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[d/o or s/o Mr ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="488" y="24" width="65" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="33" width="61" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[and/or Mrs]]></text>
+			</staticText>
+			<line>
+				<reportElement x="61" y="48" width="65" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="135" y="33" width="448" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[has been identified as a child needing sponsorship support for education/health/]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="58" width="201" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[nutrition/ other developmental needs]]></text>
+			</staticText>
+			<line>
+				<reportElement x="198" y="71" width="50" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="253" y="58" width="330" height="17" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[(please specify ) . The  District  Child  Protection  Unit   is]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="83" width="173" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[hereby directed to release Rs]]></text>
+			</staticText>
+			<line>
+				<reportElement x="162" y="96" width="50" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="213" y="83" width="83" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[per month/ Rs]]></text>
+			</staticText>
+			<line>
+				<reportElement x="291" y="95" width="65" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="353" y="83" width="222" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[as one time sponsorship support to the]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="108" width="135" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[said child for a period of]]></text>
+			</staticText>
+			<line>
+				<reportElement x="132" y="121" width="75" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="213" y="108" width="353" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[(days/month)  and  carryout  necessary follow up and for the said]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="133" width="395" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[purpose   shall   open   a   bank   account   in   the   name   of   the   child  ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="392" y="146" width="75" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="465" y="133" width="98" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[to be operated by]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="166" width="100" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="212" y="12" width="47" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{name36}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="346" y="11" width="46" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{age36}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="497" y="11" width="44" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{mr36}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="74" y="34" width="41" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{mrs36}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="58" width="49" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{needs36}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="82" width="35" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{rs36}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="81" width="39" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{rss36}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="147" y="107" width="54" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{period36}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="131" width="46" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{child36}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="27" y="150" width="34" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{op36}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="23" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="86" splitType="Stretch">
+			<staticText>
+				<reportElement x="205" y="19" width="342" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Children’s Court/ Principal Magistrate, Juvenile Justice Board/]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="52" width="269" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Chairperson/Member, Child Welfare Committee]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="15" splitType="Stretch"/>
+	</summary>
+</jasperReport>

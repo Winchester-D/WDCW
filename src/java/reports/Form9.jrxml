@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form9" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+  <import value="java.lang.Object"/>
+	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
+	<import value="java.lang.String"/>
+	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select * from form9]]>
+	</queryString>
+	<field name="i" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="of" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="board" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sec" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="period" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="period1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="to" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="child" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<image>
+				<reportElement x="420" y="10" width="100" height="50" />
+				<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+createLinear(3, "123456789"))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="10" y="71" width="553" height="59" />
+				<textElement>
+					<font size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[                                                          FORM 9
+                                                      [Rules 11(7)]
+                                         PERSONAL BOND BY CHILD]]></text>
+			</staticText>
+			<image>
+				<reportElement x="231" y="10" width="63" height="61" />
+				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="143" width="584" height="342" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[                  Whereas I, ……………………inhabitant of……………………..(give full particulars such as house
+number, road, village/town, tehsil, district, state) have been ordered to be sent back/restored by the Juvenile
+Justice Board  ………………….. under  section ………..  of  the  Juvenile  Justice ( Care  and  Protection  of
+Children) Act, 2015 on my entering into a personal bond to observe the conditions mentioned herein below.
+Now, therefore, I do solemnly promise to abide by these conditions during the
+period…………………………...
+              I hereby bind myself as follows:
+    1.      That during the period………….. I shall not ordinarily leave the village/town/district to which I am
+             sent and shall not ordinarily return to…………………….or go anywhere else beyond the said district
+             without the prior permission of the Board;
+    2.      That during the said period I shall attend school/ vocational training in the village/town or in the said
+             district to which I am sent;
+    3.      That in case of my attending school/ vocational training at any other place in the said district I shall
+              keep the Board informed of my ordinary place of residence.
+              I hereby acknowledge that I am aware of the above conditions which have been read
+              over/explained to me and that I accept the same.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="496" width="257" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(Signature or thumb impression of the child)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="529" width="750" height="86" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[              Certified that the conditions specified in the above order have been read over/explained to (Name
+of child) ……………………..and that he has accepted them as the conditions upon non-compliance of which
+he/she may be placed in safe custody.
+              Certified accordingly that the said child has been released/ relieved on (date) ………………….]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="513" y="636" width="60" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Signature]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="678" width="257" height="82" />
+				<textElement>
+					<font size="12" isBold="true"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[                         Principal Magistrate/Members
+                                 Juvenile Justice Board ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="141" width="31" height="17" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{i}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="141" width="30" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{of}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="101" y="185" width="52" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{board}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="255" y="185" width="39" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{sec}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="66" y="246" width="62" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{period}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="166" y="291" width="59" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{period1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="263" y="310" width="31" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{to}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="66" y="550" width="51" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{child}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="479" y="591" width="41" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

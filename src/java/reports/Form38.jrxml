@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form381" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+         <import value="java.lang.Object"/>
+	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
+	<import value="java.lang.String"/>
+	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select * from form38]]>
+	</queryString>
+	<field name="cpOname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpOrno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpOrdate" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpOama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpOaddress" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpOtel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpOfax" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpOemail" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIaddress" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpRefno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDenial" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpReason" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpPaddress" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpPtel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpPfax" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpPemail" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpCmrd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpCbstn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpCrstn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpClmrk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpInr" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIntlts" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpInk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIsrm" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIapob" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIdfire" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIdeqke" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIdoa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIadw" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIshpc" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIshwd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIshsa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIshoa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIara" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpFodc" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpSdsl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpSpo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpBa2yr" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpBaam" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpBlao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpBar1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpBard" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpBaaf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpBba" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpBaba" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpBar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpBiea" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpBrpa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpBbso" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIoname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="131" splitType="Stretch">
+			<staticText>
+				<reportElement x="255" y="71" width="63" height="21" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FORM 38 ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="248" y="0" width="78" height="61" />
+				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
+			</image>
+                        <image>
+				<reportElement x="429" y="6" width="100" height="50" />
+				<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+createLinear(3, "123456789"))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="233" y="92" width="100" height="22" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[     [Rule 27(2)] ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="114" width="394" height="17" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[APPLICATION FOR FIT FACILITY INCLUDING GROUP FOSTER CARE ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="10" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="6" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="648" splitType="Stretch">
+			<rectangle>
+				<reportElement x="14" y="5" width="541" height="37" />
+			</rectangle>
+			<line>
+				<reportElement x="69" y="5" width="1" height="37" />
+			</line>
+			<staticText>
+				<reportElement x="25" y="5" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="5" width="455" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Detail of Institution/ Agency/ Organization which seeks recognition as fit facility]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="42" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="42" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.a]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="42" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Name of the Institution /Agency/ Organization]]></text>
+			</staticText>
+			<line>
+				<reportElement x="69" y="42" width="1" height="20" />
+			</line>
+			<line>
+				<reportElement x="448" y="42" width="1" height="20" />
+			</line>
+			<textField>
+				<reportElement x="455" y="42" width="100" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpOname}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="14" y="62" width="541" height="107" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="62" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.b]]></text>
+			</staticText>
+			<line>
+				<reportElement x="69" y="62" width="1" height="575" />
+			</line>
+			<line>
+				<reportElement x="448" y="62" width="1" height="335" />
+			</line>
+			<staticText>
+				<reportElement x="81" y="62" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Registration number and date of Registration of the Institution/]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="82" width="350" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Organization under the relevant Act]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="119" width="346" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(Annex- Relevant documents of registration, bye-laws,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="139" width="346" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[memorandum of association)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="62" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpOrno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="82" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpOrdate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="119" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpOama}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="14" y="169" width="541" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="169" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.c ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="169" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Complete address of the Applicant/ Institution/ organization]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="189" width="541" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="14" y="209" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="189" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.d]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="209" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.e]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="229" width="541" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="14" y="249" width="541" height="37" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="229" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.f ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="189" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[STD code/ Telephone No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="209" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[STD code Fax No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="229" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[E-mail address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="249" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.g]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="249" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Whether the organization is of all India character, if yes, give address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="269" width="350" height="17" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[of its branches, in other states]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="286" width="541" height="111" />
+			</rectangle>
+			<staticText>
+				<reportElement x="81" y="286" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[If the Institution had been denied recognition earlier? If yes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="306" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[i. Reference No. of application leading to denial of recognition]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="326" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ii. Date of denial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="346" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[iii. Who had denied the recognition]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="366" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[iv. Reason for denial of recognition]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="286" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.h]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="397" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="397" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="397" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Details of the proposed fit facility:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="417" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="417" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2.a]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="417" width="346" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Complete address/ location of proposed Fit Facility]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="437" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="437" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2.b]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="437" width="346" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[STD code/ telephone no]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="457" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="457" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2.c ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="457" width="346" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[STD code fax no]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="477" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="477" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2.d]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="477" width="346" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[E-mail]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="497" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="497" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="497" width="374" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Connectivity (Name and Distance from the proposed Fit Facility):]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="517" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="517" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[3.a]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="517" width="346" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Main Road]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="537" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="81" y="537" width="346" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Bus –stand ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="537" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[3.b]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="557" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="557" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[3.c ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="557" width="346" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Railway Station]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="577" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="577" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[3.d]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="577" width="346" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Any landmark]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="597" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="81" y="597" width="374" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Infrastructure:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="597" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="617" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="617" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[4.a]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="617" width="346" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No. of Rooms (Mention with measurement)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="69" y="172" width="1" height="465" />
+			</line>
+			<line>
+				<reportElement x="448" y="169" width="1" height="228" />
+			</line>
+			<line>
+				<reportElement x="415" y="417" width="1" height="80" />
+			</line>
+			<line>
+				<reportElement x="431" y="517" width="1" height="80" />
+			</line>
+			<line>
+				<reportElement x="432" y="617" width="1" height="20" />
+			</line>
+			<textField>
+				<reportElement x="455" y="174" width="87" height="15" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpOaddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="195" width="67" height="14" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpOtel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="209" width="68" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpOfax}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="457" y="229" width="79" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpOemail}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="457" y="249" width="84" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpIaddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="457" y="306" width="69" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpRefno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="325" width="69" height="21" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpDenial}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="346" width="73" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpDname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="457" y="366" width="75" height="23" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpReason}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="417" width="90" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpPaddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="428" y="437" width="67" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpPtel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="428" y="457" width="64" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpPfax}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="428" y="477" width="81" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpPemail}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="517" width="69" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpCmrd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="537" width="71" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpCbstn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="557" width="76" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpCrstn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="577" width="73" height="13" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpClmrk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="617" width="61" height="14" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpInr}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="758" splitType="Stretch">
+			<rectangle>
+				<reportElement x="14" y="5" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="81" y="5" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[No. of toilets (mention with measurement)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="25" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="25" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[4.c]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="25" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[No. of Kitchens (mention with measurement)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="45" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="81" y="45" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[No. of sick room]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="65" width="541" height="45" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="14" y="206" width="541" height="40" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="14" y="241" width="541" height="100" />
+			</rectangle>
+			<staticText>
+				<reportElement x="83" y="246" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Arrangement to maintain sanitation and hygiene:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="266" width="335" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[i. Pest Control]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="286" width="335" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ii. Waste disposal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="306" width="335" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[iii. Storage area]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="326" width="335" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[iv. Any other arrangement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="241" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[4.h]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="341" width="541" height="45" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="14" y="386" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="386" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="386" width="346" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Capacity of the Fit Facility]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="406" width="541" height="40" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="406" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="406" width="484" height="20" />
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Facilities Available (would depend on the purpose for which recognition as fit facility is]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="446" width="541" height="41" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="446" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[6.a]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="446" width="351" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Any other facility that shall impact on the overall development of]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="507" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="81" y="507" width="346" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Detailed staff list]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="507" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[7.a]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="526" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="527" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[7.b]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="527" width="346" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Name of partner organizations]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="546" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="42" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[4.d]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="65" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[4.e]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="65" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Annex -Copy of blue print of the building (authentic sketch]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="85" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[plan of building)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="110" width="541" height="96" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="110" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[4.f ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="110" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Arrangement to deal with unforeseen disaster also mention the]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="130" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[kind of arrangement made:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="5" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[4.b]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="150" width="54" height="18" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[i) Fire]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="168" width="103" height="18" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ii) Earth quake]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="186" width="155" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[iii) Any other arrangement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="206" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[4.g]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="206" width="170" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Arrangement of Drinking water]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="253" y="206" width="170" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Annex-Certified from public]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="226" width="228" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[health engineering (PHE) Department.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="341" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[4.i]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="346" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Rent agreement/ building maintenance estimate (whichever is]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="366" width="69" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[applicable)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="366" width="196" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(Annex- copy of Rent agreement)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="426" width="100" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[to be given)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="467" width="56" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[the child]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="487" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="487" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[7.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="487" width="107" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Staffing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="547" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[8.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="547" width="172" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Background of the Applicant]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="566" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="567" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[8.a]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="567" width="346" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Major activities of the organization in last two years]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="586" width="541" height="59" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="587" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[8.b]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="587" width="346" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[An updated list of members of the management committee/]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="607" width="209" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[governing body in the enclosed format]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="607" width="143" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(Annex- resolution of the]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="627" width="107" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[annual meeting)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="645" width="541" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="647" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[8.c ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="647" width="346" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[List of assets/ infrastructure of the organization]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="665" width="541" height="39" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="667" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[8.d]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="667" width="341" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[If the organization is registered under the Foreign Contribution]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="687" width="121" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[(Regulation) Act, 1976]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="202" y="687" width="207" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(Annex – certificate of registration)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="704" width="541" height="41" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="707" width="24" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[8.e]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="707" width="295" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Details of foreign contribution received last two years (]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="376" y="707" width="47" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Annex-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="725" width="119" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[relevant documents]]></text>
+			</staticText>
+			<line>
+				<reportElement x="433" y="5" width="1" height="381" />
+			</line>
+			<line>
+				<reportElement x="59" y="5" width="1" height="740" />
+			</line>
+			<line>
+				<reportElement x="434" y="567" width="1" height="178" />
+			</line>
+			<line>
+				<reportElement x="432" y="507" width="1" height="40" />
+			</line>
+			<line>
+				<reportElement x="435" y="447" width="1" height="40" />
+			</line>
+			<textField>
+				<reportElement x="448" y="10" width="74" height="15" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpIntlts}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="448" y="28" width="61" height="17" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpInk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="448" y="45" width="67" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpIsrm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="447" y="65" width="75" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpIapob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="448" y="150" width="74" height="18" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpIdfire}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="448" y="170" width="75" height="16" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpIdeqke}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="448" y="186" width="70" height="22" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpIdoa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="453" y="208" width="70" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpIadw}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="447" y="266" width="76" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpIshpc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="448" y="286" width="75" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpIshwd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="448" y="306" width="75" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpIshsa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="448" y="326" width="75" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpIshoa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="447" y="361" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpIara}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="447" y="447" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpFodc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="447" y="507" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpSdsl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="447" y="527" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpSpo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="448" y="567" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpBa2yr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="448" y="597" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpBaam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="453" y="645" width="78" height="16" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpBlao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="456" y="667" width="67" height="22" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpBar1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="456" y="707" width="70" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpBard}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="752" splitType="Stretch">
+			<rectangle>
+				<reportElement x="14" y="5" width="541" height="50" />
+			</rectangle>
+			<staticText>
+				<reportElement x="70" y="17" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[List of other sources of grant- in – aid funding (if any )with the ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="18" width="22" height="16" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[8.f ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="30" width="357" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[name of the scheme / project , purpose amount, etc. (separately)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="55" width="541" height="50" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="55" width="22" height="16" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[8.g]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="55" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Details of existing bank account of the agency indicating branch]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="75" width="94" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[code account no.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="105" width="541" height="45" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="105" width="22" height="16" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[8.h]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="105" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Whether the agency agrees to open a separate bank account for]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="121" width="350" height="20" />
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[the grant proposed]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="14" y="141" width="541" height="185" />
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="141" width="22" height="16" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[8.i]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="141" width="297" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Annex -Photocopy of Accounts of last three years:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="173" width="297" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[i.   Auditors report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="193" width="297" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ii.   Income and]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="213" width="297" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[      expenditure account]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="233" width="297" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[iii.   Receipt and payment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="253" width="297" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[       account]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="273" width="297" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[iv.   Balance sheet of the]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="293" width="100" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[       organization.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="342" width="531" height="35" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[            I have read and understood The Juvenile Justice (Care and Protection of Children Act), 2015; and
+the Juvenile Justice (Care and Protection of Children) Rules, 2016.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="389" width="531" height="47" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[             ...... .………………………………..(Name of the Organization / Institution) has complied with all the 
+ requirements to be granted recognition as a Fit Facility under the Juvenile Justice (Care and Protection of
+ Children) Act, 2015 and the Juvenile Justice (Care and Protection of Children) Rules, 2016.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="455" width="531" height="63" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[              I declare that no person associated with the organization has been previously convicted or has
+been involved in any immoral act or in any act of child abuse or employment of child labour or an offence
+involving moral turpitude and that the organization has not been blacklisted  by the  Central  or  the  State
+Government at any point of time.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="528" width="531" height="37" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[             I undertake to abide by all the conditions laid down by the Central/ State Act, Rules, Guidelines and
+Notifications in this regard.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="565" width="531" height="34" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[              I undertake to abide by the orders passed by the Juvenile Justice Board or the Child Welfare
+Committee from time to time. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="599" width="331" height="20" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Signature of the authorized signatory: ……………………………]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="619" width="331" height="133" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Name:
+Designation:
+Address:
+District:
+Date:
+Office stamp: 
+Signature of:
+Witness no.1: ……………………………. 
+Witness no.2: ……………………………… ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="47" y="5" width="1" height="321" />
+			</line>
+			<line>
+				<reportElement x="427" y="5" width="1" height="321" />
+			</line>
+			<textField>
+				<reportElement x="441" y="21" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpBaaf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="71" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpBba}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="105" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpBaba}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="173" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpBar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="193" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpBiea}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="233" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpBrpa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="273" width="100" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpBbso}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="389" width="82" height="20" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpIoname}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

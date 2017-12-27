@@ -1,0 +1,2417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form35" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="4286"/>
+      <import value="java.lang.Object"/>
+	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
+	<import value="java.lang.String"/>
+	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select * from form35]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="125" splitType="Stretch">
+			<image>
+				<reportElement x="440" y="-11" width="100" height="50" />
+				<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+createLinear(3, "123456789"))]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="251" y="-11" width="63" height="61" />
+				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="243" y="51" width="92" height="36" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[    FORM 35 
+ [Rule 23(18)]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="88" y="87" width="409" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[MONTHLY INSPECTION OF FOSTER FAMILIES/GROUP FOSTER CARE ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="105" width="110" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[(Fill as applicable)]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="662" splitType="Stretch">
+			<staticText>
+				<reportElement x="29" y="3" width="100" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Date of Visit: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="25" width="555" height="249" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[a) Name :
+b) Date of Birth & Age :
+c) Gender
+d) Date of Placement
+    1.        Details of Foster Parents 
+               a) Name of Foster Parents 
+               b) Address 
+               c) Contact details 
+                    i) Landline 
+                   ii) Mobile: 
+d) Aadhaar Card Number:
+e) Photograph of Parents
+]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement x="408" y="50" width="132" height="101" />
+			</rectangle>
+			<staticText>
+				<reportElement x="440" y="78" width="70" height="39" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[(Affix Recent
+Photo)]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement x="98" y="276" width="132" height="101" />
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement x="308" y="276" width="132" height="101" />
+			</rectangle>
+			<staticText>
+				<reportElement x="129" y="320" width="70" height="39" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[(Affix Recent
+Photo)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="320" width="70" height="39" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[(Affix Recent
+Photo)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="380" width="199" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3. Interaction with the Foster Child]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="400" width="555" height="262" />
+			</rectangle>
+			<line>
+				<reportElement x="60" y="400" width="1" height="260" />
+			</line>
+			<line>
+				<reportElement x="386" y="398" width="1" height="262" />
+			</line>
+			<staticText>
+				<reportElement x="65" y="400" width="340" height="191" />
+				<textElement>
+					<font size="11"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Child’s experience being part of the family (
+with reference to whether the child is
+properly cared for – physical, emotional  and 
+health) describe
+               i) Health Indicators 
+                      a) Present Health Status 
+                      b) Any record of Illness 
+                      c) Any other treatment that the child  
+                          is undergoing 
+              ii) Emotional ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="591" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="440" y="489" width="100" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Maladjusted]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="461" width="127" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[In process of adjusting]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="415" width="100" height="41" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Happy and welladjusted]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="392" y="489" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="392" y="415" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="392" y="461" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="64" y="592" width="297" height="70" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[How is the child performing in his studies?
+             (i) check in relation with the grades/marks 
+                 the child achieved in previous examinations, 
+                 
+             (ii) Foster parents have regular ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="479" y="603" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="395" y="632" width="68" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sometimes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="437" y="604" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="518" y="602" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="481" y="631" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="395" y="604" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="602" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[b)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="415" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[a)]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<rectangle>
+				<reportElement x="1" y="0" width="555" height="802" />
+			</rectangle>
+			<line>
+				<reportElement x="60" y="0" width="1" height="802" />
+			</line>
+			<line>
+				<reportElement x="348" y="0" width="1" height="802" />
+			</line>
+			<staticText>
+				<reportElement x="76" y="3" width="223" height="63" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[conversations with the child regarding
+his/her studies, extra curriculal activities
+(iii) Do they attend PTA meetings?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="5" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="407" y="5" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="454" y="6" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="355" y="31" width="68" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sometimes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="504" y="4" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="454" y="31" width="30" height="20" />
+			</rectangle>
+			<line>
+				<reportElement x="1" y="68" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="76" y="72" width="260" height="101" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[i) The amount of time parents (foster)
+spend with the child either alone or
+together with their own children.
+ii) How do they spend time together as a
+family and for what?
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="76" y="177" width="260" height="101" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[iii) Does the foster child share with the
+foster parent’s problems he /she is facing
+either at home, school in the
+neighbourhood or emotionally feeling not
+happy?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="81" width="19" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[c)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="360" y="76" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="360" y="124" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="360" y="100" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="360" y="149" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="360" y="173" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="360" y="198" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="361" y="222" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="361" y="247" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="407" y="95" width="131" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Having conversations]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="407" y="117" width="131" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Dining]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="407" y="140" width="131" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Playing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="407" y="162" width="131" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Watching TV]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="407" y="185" width="131" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Going to school]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="407" y="208" width="148" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Doing homework together]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="407" y="231" width="131" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Others (specify)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="460" y="320" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="413" y="289" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="460" y="290" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="366" y="287" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="510" y="291" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="361" y="319" width="68" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sometimes]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="352" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="76" y="285" width="260" height="64" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Does the child get support from foster
+parents’ children? ( do they mutually help
+each other)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="312" width="19" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[d)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="281" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="17" y="360" width="19" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[e)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="76" y="357" width="260" height="42" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Has there been any incident that made the
+foster child feel discriminated against?]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="402" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="19" y="411" width="19" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[f) ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="76" y="406" width="260" height="386" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Has there been any incident/incidents that
+made you uncomfortable?
+i) The way a foster parent/older sibling/any
+other member touched you.
+ii)The conversations foster parents/older
+siblings/any other member had with you
+iii) Any materials- visuals, printed you were
+made to watch or read
+iv) Were you at any time sexually
+assaulted or abused?*
+*if the answers are “yes” immediate steps
+should be taken to remove the child and
+send to a place of safety and support the
+child with medical and psycho-social
+therapy.
+** Actions to be taken against the foster
+carers or parents according to the
+procedures laid down.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="415" y="412" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="368" y="413" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="512" y="413" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="462" y="413" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="438" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="415" y="437" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="462" y="438" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="512" y="438" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="369" y="463" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="416" y="462" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="463" y="463" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="513" y="463" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="369" y="488" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="513" y="488" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="463" y="488" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="416" y="487" width="30" height="20" />
+			</rectangle>
+		</band>
+		<band height="802">
+			<rectangle>
+				<reportElement x="0" y="10" width="555" height="300" />
+			</rectangle>
+			<line>
+				<reportElement x="54" y="11" width="1" height="300" />
+			</line>
+			<line>
+				<reportElement x="364" y="11" width="1" height="300" />
+			</line>
+			<staticText>
+				<reportElement x="65" y="17" width="249" height="63" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Whether the child keeps in contact with
+his/her family of origin (by telephone,
+letters, visits). Specify ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="83" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="65" y="90" width="249" height="39" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Have you been beaten by the foster parent
+at any time?]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="133" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="65" y="140" width="249" height="39" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Have you been spoken to in a manner
+that you felt humiliated?]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="183" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="65" y="189" width="249" height="27" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Are you made to do household chores?]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="224" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="65" y="230" width="278" height="66" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Do the biological children of the foster
+parents made to do the same household
+chores?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="472" y="19" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="423" y="19" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="513" y="19" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="375" y="20" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="424" y="93" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="514" y="93" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="473" y="93" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="376" y="94" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="426" y="142" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="516" y="142" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="475" y="142" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="378" y="143" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="426" y="190" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="516" y="190" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="475" y="190" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="378" y="191" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="426" y="237" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="516" y="237" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="475" y="237" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="378" y="238" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="28" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[g)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="94" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[h)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="140" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[i)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="194" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[j)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="238" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[k)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="316" width="192" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5.Interaction with Foster Parents]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="1" y="350" width="555" height="451" />
+			</rectangle>
+			<line>
+				<reportElement x="54" y="350" width="1" height="451" />
+			</line>
+			<line>
+				<reportElement x="364" y="350" width="1" height="451" />
+			</line>
+			<staticText>
+				<reportElement x="61" y="361" width="298" height="42" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Parent’s impressions about the behavior (emotional
+well-being) of the child in the family]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="379" y="361" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="379" y="407" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="379" y="435" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="425" y="361" width="100" height="41" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Happy and welladjusted]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="425" y="407" width="127" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[In process of adjusting]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="435" width="100" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Maladjusted]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="460" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="66" y="467" width="267" height="43" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Perception about his/her adjustment with the
+household and with other members in the family]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="380" y="512" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="428" y="540" width="100" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Maladjusted]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="380" y="540" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="426" y="512" width="127" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[In process of adjusting]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="466" width="100" height="41" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Happy and welladjusted]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="380" y="466" width="30" height="20" />
+			</rectangle>
+			<line>
+				<reportElement x="1" y="564" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="66" y="571" width="196" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[How do you discipline the child?]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="380" y="571" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="426" y="571" width="127" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Reason with the child]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="380" y="596" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="381" y="619" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="382" y="643" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="426" y="596" width="127" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Scolding , Chastise]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="623" width="127" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Beat the child]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="646" width="127" height="34" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Other Methods
+(Specify)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="680" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="61" y="691" width="298" height="39" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[What are the behavior traits that are of concern and
+how do you as parents deal with them?]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="382" y="694" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="384" y="766" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="383" y="742" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="382" y="719" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="428" y="739" width="127" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Introvert ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="712" width="127" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Lack of Adjustment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="687" width="127" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Lack of co-operation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="762" width="127" height="24" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Aggressive]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="571" width="19" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[c)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="365" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[a)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="484" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[b)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="696" width="19" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[d)]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<rectangle>
+				<reportElement x="1" y="0" width="555" height="802" />
+			</rectangle>
+			<line>
+				<reportElement x="376" y="0" width="1" height="802" />
+			</line>
+			<line>
+				<reportElement x="55" y="0" width="1" height="802" />
+			</line>
+			<line>
+				<reportElement x="1" y="65" width="555" height="1" />
+			</line>
+			<rectangle>
+				<reportElement x="390" y="8" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="390" y="42" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="433" y="8" width="123" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Not Communicative]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="433" y="42" width="69" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Any Other ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="63" y="74" width="291" height="36" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Do you spend time together with the foster child and
+biological children? Describe.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="473" y="75" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="102" width="68" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sometimes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="426" y="75" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="523" y="75" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="384" y="101" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="384" y="75" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="130" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="63" y="136" width="298" height="144" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Views on the progress of Child’s education and other
+talents
+i)Child is faring well in school
+ii) If the child is not faring well in school do you seek to
+find out the reasons a)from the child
+b) the school teacher
+iii) Do you attend PTA meetings?]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="522" y="143" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="472" y="143" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="425" y="143" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="383" y="143" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="522" y="175" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="472" y="175" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="425" y="175" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="383" y="175" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="473" y="243" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="383" y="245" width="68" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sometimes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="523" y="212" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="473" y="212" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="426" y="212" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="384" y="212" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="284" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="63" y="289" width="286" height="41" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Do the foster parents consult the child while taking
+decisions on behalf of him/her?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="383" y="291" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="385" y="319" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="425" y="291" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="427" y="319" width="68" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sometimes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="522" y="291" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="472" y="291" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="347" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="62" y="353" width="292" height="40" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[How does the child show his approval/disapproval to
+the foster parent’s decisions?]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="383" y="353" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="418" y="353" width="138" height="40" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Accept the
+decision with happiness]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="384" y="397" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="420" y="397" width="138" height="40" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Accept the decisions
+but unhappy]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="387" y="439" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="423" y="439" width="133" height="48" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Refuse to accept the
+decision and shows
+aggressive behavior)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="490" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="63" y="494" width="291" height="37" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Are the foster parents aware of the social networks of
+the child?]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="523" y="496" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="426" y="496" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="384" y="496" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="473" y="496" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="534" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="64" y="540" width="305" height="41" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Views on child’s social relationship with the neighbors,
+school friends and teachers.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="384" y="540" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="433" y="537" width="100" height="34" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Good and regular
+interaction]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="386" y="575" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="433" y="575" width="100" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Periodic Interactions]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="599" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="67" y="605" width="282" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[What is their plan for the child?(To be noted down)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="628" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="69" y="632" width="300" height="39" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Does the foster child maintain the contact with his/her
+family of origin? (by telephone, letters, visits). Specify]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="524" y="633" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="427" y="633" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="385" y="633" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="386" y="662" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="429" y="662" width="68" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sometimes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="633" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="689" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="67" y="702" width="292" height="44" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Who maintains the bank account of the foster child as
+a parent?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="75" width="16" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[e)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="136" width="16" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[f) ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="291" width="16" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[g)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="353" width="16" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[h)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="494" width="16" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[i)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="540" width="16" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[j)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="603" width="16" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[k)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="633" width="16" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[l)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="702" width="16" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[m)]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<staticText>
+				<reportElement x="6" y="10" width="319" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6. Interaction with biological children of the Foster Parents:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="3" y="33" width="551" height="330" />
+			</rectangle>
+			<staticText>
+				<reportElement x="42" y="40" width="259" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[The things they do together with the foster child]]></text>
+			</staticText>
+			<line>
+				<reportElement x="37" y="33" width="1" height="330" />
+			</line>
+			<line>
+				<reportElement x="369" y="33" width="1" height="330" />
+			</line>
+			<line>
+				<reportElement x="3" y="161" width="551" height="1" />
+			</line>
+			<rectangle>
+				<reportElement x="378" y="37" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="425" y="37" width="44" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Dining]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="379" y="60" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="426" y="60" width="44" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Playing]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="379" y="83" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="426" y="83" width="77" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Watching TV]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="380" y="106" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="427" y="106" width="97" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Going to school]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="380" y="129" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="428" y="127" width="96" height="32" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Doing homework
+together]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="166" width="323" height="63" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Do they have quarrels or fights between themselves and
+the foster child? If yes, how often, on what issues, and how
+do they resolve it. Please note down.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="3" y="232" width="551" height="1" />
+			</line>
+			<rectangle>
+				<reportElement x="519" y="168" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="422" y="168" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="380" y="168" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="469" y="199" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="379" y="201" width="68" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sometimes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="168" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="238" width="310" height="40" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[How do you feel when your parents show love, affection
+and care to the foster child?]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="380" y="273" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="380" y="296" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="381" y="319" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="379" y="250" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="429" y="318" width="97" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jealous]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="249" width="44" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Happy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="295" width="77" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Angry]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="272" width="53" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Unhappy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="245" width="19" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[c)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="40" width="19" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[a)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="168" width="19" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[b)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="368" width="231" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[7. Interaction with the School Teachers:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="2" y="385" width="546" height="417" />
+			</rectangle>
+			<line>
+				<reportElement x="35" y="385" width="1" height="417" />
+			</line>
+			<line>
+				<reportElement x="369" y="385" width="1" height="417" />
+			</line>
+			<staticText>
+				<reportElement x="41" y="389" width="316" height="62" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Information about the academic performance of the child
+in the school (verify with progress cards to see if the child
+has shown any progress)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="383" y="415" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="382" y="392" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="431" y="437" width="77" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Satisfactory]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="460" width="97" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Poor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="414" width="53" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Fair]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="383" y="438" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="384" y="461" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="430" y="391" width="44" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Good]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="486" width="546" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="41" y="491" width="316" height="37" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Teacher’s observation: if the child has adjusted to his/her
+foster parents]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="386" y="536" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="434" y="564" width="100" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Maladjusted]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="386" y="564" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="421" y="536" width="127" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[In process of adjusting]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="490" width="100" height="41" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Happy and welladjusted]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="386" y="490" width="30" height="20" />
+			</rectangle>
+			<line>
+				<reportElement x="2" y="588" width="546" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="40" y="593" width="311" height="26" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Do the foster parents attend parent-teacher meetings?]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="472" y="626" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="511" y="595" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="383" y="595" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="628" width="68" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sometimes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="472" y="595" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="425" y="595" width="30" height="20" />
+			</rectangle>
+			<line>
+				<reportElement x="1" y="650" width="546" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="41" y="664" width="316" height="68" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Do they seem interested in the child’s studies?(by
+enquiring of his academic achievements, his relationship
+with teachers and classmates)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="466" y="694" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="376" y="696" width="68" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sometimes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="510" y="662" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="419" y="663" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="377" y="663" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="466" y="663" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="600" width="19" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[c)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="523" width="19" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[b)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="395" width="19" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[a)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="669" width="19" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[d)]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<rectangle>
+				<reportElement x="1" y="6" width="555" height="150" />
+			</rectangle>
+			<line>
+				<reportElement x="56" y="6" width="1" height="150" />
+			</line>
+			<line>
+				<reportElement x="1" y="114" width="555" height="1" />
+			</line>
+			<line>
+				<reportElement x="382" y="6" width="1" height="150" />
+			</line>
+			<staticText>
+				<reportElement x="61" y="11" width="296" height="40" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Observation on child’s behavior in the school ( his
+relationship with teachers, classmates)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="394" y="58" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="429" y="58" width="127" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[In process of adjusting]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="12" width="100" height="41" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Happy and welladjusted]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="442" y="86" width="100" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Maladjusted]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="394" y="12" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="394" y="86" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="61" y="120" width="311" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Any concerns of the child in the school. If yes, give details]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="123" width="16" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[f)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="12" width="16" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[e)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="162" width="205" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[8. Interaction with Parents of Origin]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="1" y="183" width="555" height="522" />
+			</rectangle>
+			<line>
+				<reportElement x="46" y="183" width="1" height="522" />
+			</line>
+			<line>
+				<reportElement x="385" y="183" width="1" height="522" />
+			</line>
+			<line>
+				<reportElement x="1" y="248" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="51" y="188" width="331" height="50" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Have the parents of origin maintained contact with their child
+(by telephone calls, letters, and visits? How frequently?]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="394" y="218" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="437" y="218" width="68" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sometimes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="523" y="190" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="437" y="190" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="395" y="190" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="484" y="190" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="253" width="306" height="17" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Was the child happy to meet them?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="482" y="254" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="282" width="121" height="34" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Upset while meeting
+them]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="435" y="254" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="393" y="254" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="521" y="254" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="392" y="282" width="30" height="20" />
+			</rectangle>
+			<line>
+				<reportElement x="1" y="320" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="52" y="326" width="330" height="39" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Did the child raise any issues with regard to his or her foster
+carers/parents/family with them?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="482" y="327" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="435" y="327" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="393" y="327" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="521" y="327" width="30" height="20" />
+			</rectangle>
+			<line>
+				<reportElement x="1" y="365" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="54" y="371" width="328" height="47" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Do they have any interaction with the foster family regarding
+the wellbeing of the child?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="485" y="370" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="437" y="398" width="68" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Sometimes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="438" y="370" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="396" y="370" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="524" y="370" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="395" y="398" width="30" height="20" />
+			</rectangle>
+			<line>
+				<reportElement x="-1" y="424" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="54" y="430" width="303" height="25" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[The family’s status to receive back the child]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="396" y="430" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="435" y="431" width="116" height="61" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Family is interested
+and in a position to
+receive back the
+child.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="434" y="498" width="116" height="61" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Family is interested
+but not in a position
+to receive back the
+child.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="395" y="497" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="396" y="562" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="435" y="563" width="116" height="61" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Family is not
+interested to receive
+back the child.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="628" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="52" y="633" width="320" height="58" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Received any support from the government or any other
+agency in helping them to receive back the child from the
+foster carers(If yes, give details)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="437" y="646" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="523" y="646" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="484" y="646" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="395" y="646" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="707" width="181" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[9. Interaction with Neighbours]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="1" y="727" width="555" height="73" />
+			</rectangle>
+			<line>
+				<reportElement x="47" y="727" width="1" height="73" />
+			</line>
+			<line>
+				<reportElement x="386" y="727" width="1" height="73" />
+			</line>
+			<line>
+				<reportElement x="1" y="751" width="555" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="50" y="730" width="322" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Knowledge about the neighbor fostering a child.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="435" y="729" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="521" y="729" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="393" y="730" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="482" y="729" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="755" width="337" height="35" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Information about the attitude and behavior of the foster family
+towards the child.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="393" y="754" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="429" y="755" width="122" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Positive and Happy]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="393" y="777" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="429" y="780" width="122" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Indifferent Attitude]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="198" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[a)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="262" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[b)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="327" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[c)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="378" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[d)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="435" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[e)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="633" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[f)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="760" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[b)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="727" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[a)]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<rectangle>
+				<reportElement x="1" y="10" width="555" height="153" />
+			</rectangle>
+			<line>
+				<reportElement x="39" y="10" width="1" height="153" />
+			</line>
+			<line>
+				<reportElement x="388" y="11" width="1" height="153" />
+			</line>
+			<line>
+				<reportElement x="1" y="88" width="555" height="1" />
+			</line>
+			<rectangle>
+				<reportElement x="393" y="17" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="436" y="17" width="100" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Negative Attitude]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="393" y="47" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="433" y="45" width="121" height="41" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Misbehavior towards
+foster children]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="44" y="94" width="344" height="59" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Observed any quarrel or issues between the family members
+and foster child or between neighborhood and the foster child (
+if yes, give detail)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="436" y="94" width="30" height="20" />
+			</rectangle>
+			<rectangle>
+				<reportElement x="519" y="94" width="30" height="20" />
+			</rectangle>
+			<staticText>
+				<reportElement x="477" y="94" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="393" y="94" width="30" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="99" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[c)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="176" width="100" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Prepared by]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="207" width="100" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Signatures]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

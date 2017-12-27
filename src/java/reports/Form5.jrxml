@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form5" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+  <import value="java.lang.Object"/>
+	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
+	<import value="java.lang.String"/>
+	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select * from form_5]]>
+	</queryString>
+	<field name="fir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sec" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="police" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="whereas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="of" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="age" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="at" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="before" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="day" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="year" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="795" splitType="Stretch">
+			<image>
+				<reportElement x="420" y="10" width="100" height="50" />
+				<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+createLinear(3, "123456789"))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="10" y="71" width="553" height="59" />
+				<textElement>
+					<font size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[                                                          FORM 5
+                                                       [Rule 10 (2)]
+                           ORDER FOR SOCIAL INVESTIGATION REPORT]]></text>
+			</staticText>
+			<image>
+				<reportElement x="231" y="10" width="63" height="61" />
+				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="140" width="248" height="80" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[FIR No………………………………
+U/Sections…………………………..
+Police Station…………………………………….
+To,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="235" width="579" height="210" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[                   Probation   Officer/ Person   in-charge    of   Voluntary   or   Non-Governmental   Organization.
+                   Whereas ………………(Name of the Child), son/daughter of………………. age ……….residing
+at………………………………., has been produced before the Board.
+                   You  are  hereby  directed  to  enquire  into  the  social  antecedents,  family  background  and
+circumstances  of  the  alleged offence by the said  child  and submit your social investigation report on or
+before ……………….or within such time as allowed to you by the Board.
+                    You are also hereby directed to consult an expert in child psychology, psychiatric treatment or
+counselling or any other expert for their expert opinion if necessary and submit such report along with your
+Social Investigation Report.
+Dated this ………….day of …………………20……………….]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="312" y="570" width="261" height="66" />
+				<textElement>
+					<font size="12" isBold="true"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[                                                         (Signature)
+                          Principal Magistrate/ Member
+                                     Juvenile Justice Board]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="92" y="140" width="39" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{fir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="91" y="158" width="40" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{sec}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="109" y="181" width="55" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{police}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="252" width="58" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{whereas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="255" width="31" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{of}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="487" y="256" width="52" height="18" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="46" y="276" width="33" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{at}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="276" width="56" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{before}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="48" y="339" width="56" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{before}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="62" y="425" width="47" height="17" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="164" y="425" width="45" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{day}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="425" width="44" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

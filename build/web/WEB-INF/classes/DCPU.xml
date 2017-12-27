@@ -1,0 +1,71 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: suresh -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+    
+     <package name="com/cdac/dcpu/Actions" namespace="/" extends="struts-default">
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
+		</result-types>
+                
+    <interceptors>
+        <interceptor name="requestCheckInterceptor" class="com.cdac.common.interceptors.RequestCheckInterceptor"/> 
+        <interceptor name="roleCheckInterceptor"    class="com.cdac.common.interceptors.RoleCheckInterceptor" />    
+        
+                <interceptor-stack name="loggingStack">                                      
+                    
+                    <interceptor-ref name="requestCheckInterceptor" />
+                    <interceptor-ref name="roleCheckInterceptor"/>                      
+                    <interceptor-ref name="defaultStack" />
+                </interceptor-stack>
+    </interceptors>
+    
+    <action name="DCPU-Home">
+                    <interceptor-ref name="loggingStack"/>   
+                    <result name="logout" type="tiles">UM-Logout</result>
+                    <result name="success" type="tiles">DCPUWelcome</result>
+   </action>
+   
+    <!--Counselor actions-->
+    
+    
+   <action name="DCPU-DataEntry">
+                    <interceptor-ref name="loggingStack"/>   
+                    <result name="logout" type="tiles">UM-Logout</result>
+                    <result name="success" type="tiles">DCPU-DataEntry</result>
+   </action>
+      
+   <action name="DCPU-Reports">
+                    <interceptor-ref name="loggingStack"/>   
+                    <result name="logout" type="tiles">UM-Logout</result>
+                    <result name="success" type="tiles">DCPU-Reports</result>
+   </action> 
+     <action name="DCPU_Meetings22rep" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="getForm22">
+          <interceptor-ref name="loggingStack"/>   
+        <result name="logout" type="tiles">UM-Logout</result>
+        <result name="success"  type="stream">
+            <param name="contentType">application/pdf</param>
+            <param name="inputName">is22</param>
+            <param name="contentDisposition">filename="Form22.pdf"</param>
+            <param name="bufferSize">1024</param>
+        </result>
+        <result name="error" type="tiles">CWC-Error</result>
+  </action>
+    <action name="DCPU_Meetings34rep" class="com.cdac.caseworker.Actions.CaseWorkerAction" method="getForm34">
+          <interceptor-ref name="loggingStack"/>   
+        <result name="logout" type="tiles">UM-Logout</result>
+        <result name="success"  type="stream">
+            <param name="contentType">application/pdf</param>
+            <param name="inputName">is34</param>
+            <param name="contentDisposition">filename="Form34.pdf"</param>
+            <param name="bufferSize">1024</param>
+        </result>
+        <result name="error" type="tiles">CWC-Error</result>
+  </action>   
+ 
+    </package>
+</struts>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form42" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="225"/>
+  <import value="java.lang.Object"/>
+	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
+	<import value="java.lang.String"/>
+	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select * from form42;]]>
+	</queryString>
+	<field name="cpCname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpIname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpCwpo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpfrom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpPstation" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpTime" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpMtime" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpArticles" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDateday" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDatemon" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDateyr" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="107" splitType="Stretch">
+			<staticText>
+				<reportElement x="241" y="61" width="70" height="20" />
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FORM 42 ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="241" y="0" width="78" height="61" />
+				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="432" y="17" width="100" height="50" />
+				<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+createLinear(3, "123456789"))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="211" y="81" width="122" height="20" />
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[     [Rules 69 (D) (4)]]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="47" y="12" width="521" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                                       OVERNIGHT PROTECTIVE STAY]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="13" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="304" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="15" width="535" height="277" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Whereas (name of the child) ..................................has this day been apprehended/ found to be in 
+need of overnight protective stay at the ………………………………………………. (Name of the Institution).
+The said child has been produced by …………………… ( Name of the child welfare police officer,
+from ………………Police station , ……………) . The child has been brought along with the required
+application seeking protective stay, medical report stating the general health condition of the child which has
+been duly perused by the person in-charge of the Institution.
+The said child has been brought to the Institution at ………………. (time) and shall be handed over
+on the following day to the concerned jurisdiction of the child welfare police officer on or before
+………………(mention time).
+The personal belongings of the child have been thoroughly searched and the following articles
+……………………………………………. (if any) have been handed over to the concerned child welfare
+police officer.
+In case the concerned child welfare police officer fails to report in due time to take custody of the
+child, such child shall be produced before the Juvenile Justice Board/ Child Welfare Committee by the
+Officer in charge of the Institution at the earliest.
+Copy to:
+1. Child Welfare Police Officer
+2. Board / Committee
+3. The Person in charge of the Institution
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="158" y="14" width="70" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpCname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="258" y="28" width="61" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpIname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="197" y="42" width="61" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpCwpo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="56" width="57" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpfrom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="56" width="70" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpPstation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="272" y="97" width="61" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="122" width="63" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpMtime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="149" width="71" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpArticles}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="26" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="64" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="10" width="535" height="44" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Dated this ___________________ day of _____________________ 20
+(Signature)                                                                                       (Signature) 
+The Person-in-charge of the Institution                                 Child Welfare Police Officer ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="358" y="10" width="60" height="18" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpDateyr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="228" y="10" width="83" height="18" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpDatemon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="73" y="10" width="72" height="18" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpDateday}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

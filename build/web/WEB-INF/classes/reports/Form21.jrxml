@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form21" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="48"/>
+          <import value="java.lang.Object"/>
+	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
+	<import value="java.lang.String"/>
+	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select * from form21]]>
+	</queryString>
+	<field name="cpActName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpCname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpAge" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpGname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDate" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpDay" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpMon" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpYr" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="128" splitType="Stretch">
+			<staticText>
+				<reportElement x="231" y="78" width="70" height="20" />
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FORM 21 ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="230" y="17" width="78" height="61" />
+				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="432" y="17" width="100" height="50" />
+				<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+createLinear(3, "123456789"))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="208" y="108" width="100" height="20" />
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[    [Rule 19(3)]]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="14" width="555" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ORDER FOR SOCIAL INVESTIGATION REPORT OF CHILD IN NEED OF CARE AND PROTECTION]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="28" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="252" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="42" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[  To 
+                Child  Welfare  Officer/ Social Worker/Case  Worker/ Person  in-charge  of  Home/ representative  of 
+  Non- Governmental Organization
+
+            ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="158" width="555" height="28" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[                 You are hereby directed to conduct Social Investigation as per Form 22 for the above child.You are
+  directed to enquire into socio economic and family background of the said child.
+ ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="54" width="555" height="74" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[                 Whereas a report under section 31 (2) of the Juvenile Justice (Care and Protection of Children) Act,
+  2015 has been received from ………...........……..... in respect of (name of the child)……………..........., aged 
+  (approximate)………...., son/daughter of ………………………residing at……………………....., who has been
+  produced before the Committee under section 31 of the Juvenile Justice (Care  and  Protection  of  Children)
+  Act, 2015. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="196" width="555" height="43" />
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[                  You are directed to submit the Social Investigation Report on or before …………….................(date). 
+Dated this ………..day of ……………….20………….. ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="154" y="66" width="90" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpActName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="416" y="66" width="79" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpCname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="77" y="80" width="57" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpAge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="221" y="80" width="80" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpGname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="383" y="80" width="74" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="405" y="196" width="63" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="57" y="210" width="56" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpDay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="144" y="210" width="64" height="14" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{cpMon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="208" y="210" width="57" height="14" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{cpYr}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="302" y="0" width="244" height="50" />
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                                                          (Signature)
+                                        Chairperson/ Member
+                                  Child Welfare Committee]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

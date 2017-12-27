@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form22_1" pageWidth="595" pageHeight="842" language="java" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+          <import value="java.lang.Object"/>
+	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
+	<import value="java.lang.String"/>
+	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select * from form_22]]>
+	</queryString>
+	<field name="no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="commit" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="caseno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="age" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sex" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="caste" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="religion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="add" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="no">
+		<groupExpression><![CDATA[$F{no}]]></groupExpression>
+	</group>
+	<group name="commit">
+		<groupExpression><![CDATA[$F{commit}]]></groupExpression>
+	</group>
+	<group name="caseno">
+		<groupExpression><![CDATA[$F{caseno}]]></groupExpression>
+	</group>
+	<group name="name">
+		<groupExpression><![CDATA[$F{name}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="136" splitType="Stretch">
+			<image>
+				<reportElement x="241" y="-11" width="63" height="61" />
+				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="430" y="-11" width="100" height="50" />
+				<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+createLinear(3, "123456789"))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="30" y="54" width="525" height="80" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                                                                  FORM 22 
+
+                                                                [Rule 19(8)]
+
+   SOCIAL INVESTIGATION REPORT FOR CHILD IN NEED OF CARE AND PROTECTION]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="322" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="0" width="576" height="126" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[              Sl. No 
+              Produced before the Child Welfare Committee 
+              Case No 
+     Social Investigation Report Prepared by: Child Welfare Officer/ Social Worker/Case Worker/ Person in
+     charge of Home/ representative of Non- Governmental Organization
+              Details of child in need of care and protection: ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="78" y="14" width="140" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="294" y="35" width="140" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="95" y="55" width="140" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="60" y="126" width="386" height="190" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[   1.  Name 
+   2.  Age/Date/Year of birth 
+   3.  Sex 
+   4.  Caste 
+   5.  Religion 
+   6.  Father’s Name 
+   7.  Mother’s Name 
+   8.  Guardian’s Name 
+   9.  Permanent Addres ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="118" y="140" width="100" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="204" y="160" width="100" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="104" y="183" width="100" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="118" y="202" width="100" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="135" y="223" width="100" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="170" y="244" width="100" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="170" y="267" width="100" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="183" y="286" width="100" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="194" y="305" width="100" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="118" y="0" width="36" height="18" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="327" y="23" width="60" height="13" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{commit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="135" y="43" width="59" height="15" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{caseno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="135" y="127" width="50" height="16" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="242" y="147" width="41" height="16" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="170" width="45" height="14" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{sex}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="154" y="189" width="48" height="14" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{caste}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="154" y="210" width="57" height="17" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{religion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="202" y="231" width="53" height="16" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{fname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="194" y="255" width="56" height="16" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{mname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="273" width="55" height="14" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{gname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="216" y="293" width="43" height="17" forecolor="#3333FF"/>
+				<textFieldExpression><![CDATA[$F{add}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="151" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

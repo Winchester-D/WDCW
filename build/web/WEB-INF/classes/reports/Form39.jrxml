@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form39" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+         <import value="java.lang.Object"/>
+	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
+	<import value="java.lang.String"/>
+	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select * from form_39]]>
+	</queryString>
+	<field name="on39" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="inst39" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="from39" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="year139" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date139" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="day139" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date239" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="day239" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="year239" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="on39">
+		<groupExpression><![CDATA[$F{on39}]]></groupExpression>
+	</group>
+	<group name="inst39">
+		<groupExpression><![CDATA[$F{inst39}]]></groupExpression>
+	</group>
+	<group name="from39">
+		<groupExpression><![CDATA[$F{from39}]]></groupExpression>
+	</group>
+	<group name="year139">
+		<groupExpression><![CDATA[$F{year139}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="153" splitType="Stretch">
+			<image>
+				<reportElement x="432" y="14" width="100" height="50" />
+				<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+createLinear(3, "123456789"))]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="230" y="14" width="63" height="61" />
+				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="21" y="89" width="503" height="49" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                                                                   FORM 39 
+                                                                 [Rule 27(4)]
+        CERTIFICATE OF RECOGNITION OF FIT FACILITY INCLUDING GROUP FOSTER CARE ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="239" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="11" width="557" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ After  perusal  of  the documents and on the basis   of   an  inspection   of   the   Institution   conducted ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="42" width="14" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[on]]></text>
+			</staticText>
+			<line>
+				<reportElement x="7" y="51" width="50" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="61" y="40" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[the]]></text>
+			</staticText>
+			<line>
+				<reportElement x="81" y="50" width="50" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="135" y="35" width="432" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[( Name of the Institution ) is recognized as a  Fit Facility  under  Section  51  of]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="62" width="431" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[the Juvenile Justice ( Care and Protection of Children ) Act, 2015 with effect from]]></text>
+			</staticText>
+			<line>
+				<reportElement x="417" y="75" width="50" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="467" y="62" width="100" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[for  a  period of]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-11" y="95" width="50" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="39" y="83" width="100" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[years.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="106" width="557" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[The   Facility   shall remain bound  to follow  the Juvenile Justice (Care  and   Protection  of  Children )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="129" width="578" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Act, 2015, the Juvenile  Justice (Care  and  Protection of Children )  Rules, 2016  and  regulations  framed ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="154" width="288" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[by  the  appropriate  Government  from  time  to  time. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="182" width="557" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[The   Facility    shall    remain    bound  to  comply  with  the  orders passed   by   the  Juvenile  Justice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="205" width="331" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Board or the Child Welfare Committee from time to time.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="21" y="36" width="30" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{on39}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="35" width="34" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{inst39}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="61" width="50" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{from39}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="81" width="46" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{year139}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="16" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="161" splitType="Stretch">
+			<staticText>
+				<reportElement x="70" y="141" width="485" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Chairperson, Child Welfare Committee / Principal Magistrate, Juvenile Justice Board]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="122" width="111" height="19" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[           (Signature)
+                      ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="83" width="57" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Dated this]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="65" y="80" width="50" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{date239}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="65" y="102" width="50" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="115" y="83" width="33" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[day of]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="149" y="83" width="43" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{day239}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="149" y="100" width="50" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="194" y="83" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[20]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="214" y="83" width="52" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{year239}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="212" y="99" width="50" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="498" y="46" width="45" height="20" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(Seal)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="27" width="111" height="19" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[           (Signature)
+                      ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="7" width="57" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Dated this]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="61" y="7" width="53" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{date139}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="64" y="27" width="50" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="109" y="7" width="33" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[day of]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="8" width="44" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{day139}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="149" y="28" width="50" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="199" y="7" width="20" height="20" />
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[20]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="219" y="7" width="44" height="20" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{year139}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="219" y="27" width="50" height="1" />
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

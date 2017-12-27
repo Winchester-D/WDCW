@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form3" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+          <import value="java.lang.Object"/>
+	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
+	<import value="java.lang.String"/>
+	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select * from form3]]>
+	</queryString>
+	<field name="fir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="of" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="of_1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="whereas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="said" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="super" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="period" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="reside" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="period1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="day" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="year" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<image>
+				<reportElement x="445" y="10" width="100" height="50" />
+		<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+createLinear(3, "123456789"))]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="228" y="10" width="63" height="61" />
+				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="185" y="71" width="153" height="59" />
+				<textElement>
+					<font size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[           FORM 3
+     [Rule 10 (1)(iii)]
+SUPERVISION ORDER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="144" width="590" height="462" />
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[When  the  child  is  placed  under  the  care  of  a  fit  person/fit  institution/Probation  Officer  pending
+inquiry FIR/DD No. ………… of………… 20……….PS…………...
+Whereas …………………. (name of the child) is alleged to have committed an offence and is
+placed under the care of (Name )……………………………..  (address ) …………………………………… on
+executing a bond by the  said ………………………………  and the Board is  satisfied  that it is expedient to
+deal with the said child by making an order placing him/her under supervision.
+It i s  hereby  ordered   that  the  said  child  be  placed  under  the  supervision  of   ……………………   for
+a period of……………subject to the following conditions:
+1. That the child shall  reside  at…………………  for a period of…………..and shall be produced before the
+Board as and when directed.
+2. That the child shall  not be allowed to quit the district  jurisdiction of …………..without the permission of
+the Board.
+3. That the child shall  not be allowed to associate with  such  person  who  shall  negatively  influence the
+child.
+4. That the  person  under whose care the child is placed shall arrange for the proper care, education and
+welfare of the child.
+5. That  the  preventive measures will be taken by the person under whose  care the child is placed to see
+that the child does not commit any offence punishable by any law in India.
+6. That the child shall be prevented from taking narcotic drugs  or  psychotropic  substances  or  any other
+intoxicants. The person under whose supervision the child is placed shall  report  any   such   act   of   the
+child to the Board.
+Dated this…………….day of……………………………. 20……………]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="161" width="30" height="15" />
+				<textFieldExpression><![CDATA[$F{fir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="163" width="31" height="13" />
+				<textFieldExpression><![CDATA[$F{of}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="163" width="44" height="15" />
+				<textFieldExpression><![CDATA[$F{of_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="163" width="36" height="16" />
+				<textFieldExpression><![CDATA[$F{PS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="184" width="61" height="16" />
+				<textFieldExpression><![CDATA[$F{whereas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="216" y="206" width="48" height="14" />
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="206" width="62" height="16" />
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="226" width="44" height="17" />
+				<textFieldExpression><![CDATA[$F{said}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="267" width="50" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{super}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="64" y="289" width="52" height="17" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{period}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="310" width="50" height="17" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{reside}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="311" width="63" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{period1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="379" y="354" width="41" height="16" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{jur}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="584" width="43" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="202" y="584" width="41" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{day}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="317" y="584" width="43" height="15" forecolor="#3333FF" />
+				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="269" y="728" width="321" height="51" forecolor="#3333FF" />
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                                         (Signature)
+                         Principal Magistrate/ Member Juvenile
+                                                                   Justice Board]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

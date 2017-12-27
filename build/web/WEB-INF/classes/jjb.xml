@@ -1,0 +1,304 @@
+
+  <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+   <package name="com/cdac/jjb/Actions" namespace="/" extends="jasperreports-default,struts-default,json-default">
+
+  <result-types>
+  <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />  
+  </result-types>
+  
+  <!-- ajaycode  start -->
+   <action name="JJB-Home">
+      <result name="success" type="tiles">JJB-Home</result>
+      <result name="error" type="tiles">JJB-Error</result>
+   </action>
+    <action name="JJB-Court-Surrender" class="com.cdac.jjb.Actions.CourtSurrenderAction" method="getFIRAndPoliceStationList">
+      <result name="success" type="tiles">JJB-Court-Surrender</result>
+      <result name="error" type="tiles">JJB-Error</result>
+   </action>
+  <action name="JJBCourtSurrender" class="com.cdac.jjb.Actions.CourtSurrenderAction">
+      <result name="success" type="tiles">JJB-Success</result>
+      <result name="error" type="tiles">JJB-Error</result>
+  </action>
+  <action name="View-Court-Surrender" class="com.cdac.jjb.Actions.CourtSurrenderAction" method="getViewCSFIRAndPSList">
+      <result name="success" type="tiles">JJB-ViewCourtSurrender</result>
+      <result name="error" type="tiles">JJB-Error</result>
+  </action>
+  <action name="View-Court-Surrender-Details" class="com.cdac.jjb.Actions.CourtSurrenderAction" method="viewCourtSurrenderForm">
+	    <result name="success">/WEB-INF/JJB/CourtSurrenderFormDetails.jsp</result>
+            <result name="error" type="tiles">JJB-Error</result>
+  </action>
+  
+  
+ <!--   ajaycode end  -->
+  <!-- swethacode  start -->
+   <action name="JJB-Parental-Intimation" class="com.cdac.jjb.Actions.ParentalIntimation_Action" method="fetchAllFirs">     
+       
+        <result name="success" type="tiles">JJB-Parental-Intimation</result>
+        <result name="error" type="tiles">JJB-Error</result>
+        
+  </action>
+  
+  <action name="View-JJB-Parental-Intimation" class="com.cdac.jjb.Actions.ParentalIntimation_Action" method="fetchAllFirs">     
+       
+        <result name="success" type="tiles">View-JJB-Parental-Intimation</result>
+        <result name="error" type="tiles">JJB-Error</result>
+        
+  </action>
+  <action name="piFirst_action" class="com.cdac.jjb.Actions.ParentalIntimation_Action" method="displayParentalIntimation">     
+       
+        <result name="success" type="tiles">JJB-Parental-Intimation-Form</result>
+        <result name="error" type="tiles">JJB-Error</result>
+  </action>
+  
+  <action name="ViewParentIntimation_FormDetails" class="com.cdac.jjb.Actions.ParentalIntimation_Action" method="displayParentalIntimation">     
+        <result name="success" type="tiles">View-ParentalIntimation-FormDetails</result>
+        <result name="error" type="tiles">JJB-Error</result>
+  </action>
+ 
+   <action name="fir_form_action" class="com.cdac.jjb.Actions.Fir_Action" method="saveFirDet">
+	    <result name="success" type="tiles">JJB-Success</result>
+            <result name="error" type="tiles">JJB-Error</result>
+	  </action>
+    
+    <action name="storeParentalIntimation" class="com.cdac.jjb.Actions.ParentalIntimation_Action" method="saveParentalIntimation">
+	    <result name="success" type="tiles">JJB-Success</result>
+            <result name="error" type="tiles">JJB-Error</result>
+	  </action>
+          
+    <action name="JJB-ViewFir" class="com.cdac.jjb.Actions.CourtSurrenderAction" method="getFIRAndPoliceStationList">
+      <result name="success" type="tiles">JJB-ViewFirForm</result>
+      <result name="error" type="tiles">JJB-Error</result>
+    </action>
+    <action name="View-Fir-Form-Details" class="com.cdac.jjb.Actions.Fir_Action" method="viewFirForm">
+       <result name="success">/WEB-INF/JJB/ViewFirFormDetails.jsp</result>
+      <result name="error" type="tiles">JJB-Error</result>
+    </action>
+   
+    
+    <!-- swethacode  ends -->
+   <!-- suresh added on 24-11-14   start-->
+
+   
+   <!-- suresh added on 24-11-14   ends-->
+   
+  
+  <action name="JJB-First-Refferal">     
+       
+        <result name="success" type="tiles">JJB-First-Refferal</result>
+  </action>
+  
+
+ 
+    
+  <action name="Save-JJB-Form" class="com.cdac.jjb.Actions.JjbJsonAction" method="saveJJBForm">     
+       
+        <result name="success" type="json">
+           <param name="root">
+            serverMessage
+            </param>             
+           </result>
+  </action>
+  
+  <action name="View-Juvenile-List" class="com.cdac.jjb.Actions.JjbJsonAction" method="viewJuvenileList">     
+       
+        <result name="success" type="json">
+           <param name="root">
+            juveniles
+            </param>             
+           </result>
+  </action>
+    
+  <action name="View-Juvenile-FirstReffalReport" class="com.cdac.jjb.Actions.JjbJsonAction" method="viewJuvenile"> 
+        <result name="success" type="json">
+           <param name="root">
+            firstRefferalReport
+            </param>             
+           </result>
+  </action> 
+  
+  <action name="View-Form-Data" class="com.cdac.jjb.Actions.JjbJsonAction" method="viewForm"> 
+        <result name="frr_form" type="json">
+           <param name="root">
+               firstRefferalReport            
+            </param>             
+           </result>
+           
+           <result name="pi_form" type="json">
+           <param name="root">
+               parentIntimationForm            
+            </param>             
+           </result>
+           
+           <result name="dpoi_form" type="json">
+           <param name="root">
+               dpoIntimationForm            
+            </param>             
+           </result>
+           
+           <result name="penr_form" type="json">
+           <param name="root">
+               preliminaryEnquiryReport            
+            </param>             
+           </result>
+           
+           <result name="te_form" type="json">
+           <param name="root">
+               trialEntryForm            
+            </param>             
+           </result>
+           
+           <result name="sce_form" type="json">
+           <param name="root">
+               safeCustodyExtension            
+            </param>             
+           </result>           
+           
+  </action> 
+  
+  
+  <action name="Update-JJB-Form" class="com.cdac.jjb.Actions.JjbJsonAction" method="updateJJBForm">     
+       
+        <result name="success" type="json">
+           <param name="root">
+            serverMessage
+            </param>             
+           </result>
+  </action>
+  
+  <action name="Delete-JJB-Form" class="com.cdac.jjb.Actions.JjbJsonAction" method="deleteForm">     
+       
+        <result name="success" type="json">
+           <param name="root">
+            serverMessage
+            </param>             
+           </result>
+  </action>
+  
+  
+  
+  <action name="Delete-JJB-First-Refferal" class="com.cdac.jjb.Actions.JjbJsonAction" method="deleteFirstRefferalReport">     
+       
+        <result name="success" type="json">
+           <param name="root">
+            serverMessage
+            </param>             
+           </result>
+  </action>
+  
+  
+  <action name="JJB-DPO-InputForm" class="com.cdac.jjb.Actions.DPOIntiAction" method="popAccused">     
+       
+        <result name="success" type="tiles">JJB-DPO-InputForm</result>
+  </action>
+  
+   <action name="JJB-DPO-SIROrder" class="com.cdac.jjb.Actions.DPOIntiAction" method="showDPOIntiForm">     
+       
+        <result name="success" type="tiles">JJB-DPO-Intimation</result>
+  </action>
+  
+    <action name="saveDPOInti" class="com.cdac.jjb.Actions.DPOIntiAction">
+           <result name="success" type="tiles">JJB-Success</result>
+            <result name="error" type="tiles">JJB-Error</result>
+  </action>
+     <action name="JJB-viewDPOInt-Input" class="com.cdac.jjb.Actions.DPOIntiAction" method="popDPOInti">
+	    <result name="success" type="tiles">JJB-ViewDPO-Form</result>
+            <result name="error" type="tiles">JJB-Error</result>
+    </action>
+    
+    <action name="JJB-View-DpoInti" class="com.cdac.jjb.Actions.DPOIntiAction" method="showDPOInti">
+	    <result name="success">/WEB-INF/JJB/viewDPoInti.jsp</result>
+            
+    </action>
+          
+          
+  <action name="JJB-Prelim-Input" class="com.cdac.jjb.Actions.PrelEnqAction" method="popCCDetails">     
+       
+        <result name="success" type="tiles">JJB-Prelim-Input</result>
+  </action>
+  
+   <action name="storeParentalIntimation" class="com.cdac.jjb.Actions.ParentalIntimation_Action" method="saveParentalIntimation">
+	    <result name="success" type="tiles">JJB-Success</result>
+            <result name="error" type="tiles">JJB-Error</result>
+	  </action>
+  <action name="JJB-Preliminary-Enquiry" class="com.cdac.jjb.Actions.PrelEnqAction" method="showCCNum">     
+       
+        <result name="success" type="tiles">JJB-Preliminary-Enquiry</result>
+  </action>
+  
+  <action name="savePrelEnq" class="com.cdac.jjb.Actions.PrelEnqAction">
+           <result name="success" type="tiles">JJB-Success</result> 
+           <result name="error" type="tiles">JJB-Error</result> 
+  </action>
+  
+  <action name="JJB-viewDPORep-Input" class="com.cdac.jjb.Actions.PrelEnqAction" method="popCCDetails">
+           <result name="success" type="tiles">JJB-viewDPORep-Input</result> 
+           <result name="error" type="tiles">JJB-Error</result> 
+  </action>
+    <action name="JJB-View-DPORep" class="com.cdac.jjb.Actions.PrelEnqAction" method="showDPORep">
+           <result name="success">/WEB-INF/JJB/viewSocInv.jsp</result> 
+           <result name="error" type="tiles">JJB-Error</result> 
+  </action>
+  
+  
+  <action name="JJB-RemCase-Diary" class="com.cdac.jjb.Actions.RemandDiaAction" method="popAccused">   
+        <result name="success" type="tiles">JJB-RemCase-Diary</result>
+  </action>
+  <action name="JJB-Rem-Diary" class="com.cdac.jjb.Actions.RemandDiaAction" method="popRemDetails">     
+        <result name="success" type="tiles">JJB-RemDiary-Form</result>  
+  </action>  
+  <action name="saveRemCaseDiary" class="com.cdac.jjb.Actions.RemandDiaAction">
+           <result name="success" type="tiles">JJB-Success</result>
+           <result name="error" type="tiles">JJB-Error</result>
+  </action>
+  <action name="JJB-View-RCD" class="com.cdac.jjb.Actions.RemandDiaAction" method="popRemCase">
+           <result name="success" type="tiles">JJB-ViewRemInput</result>
+           <result name="error" type="tiles">JJB-Error</result>
+  </action>
+  <action name="JJB-View-RemDetails" class="com.cdac.jjb.Actions.RemandDiaAction" method="showRemDetails">
+      <result name="success">/WEB-INF/JJB/viewRemCase.jsp</result>
+  </action>
+
+ 
+  <action name="JJB-Safe-Custody-Extension">     
+       
+        <result name="success" type="tiles">JJB-Safe-Custody-Extension</result>
+  </action>
+  
+  <action name="JJB-Trial-Entry">
+       
+        <result name="success" type="tiles">JJB-Trial-Entry</result>
+  </action>
+  
+  <action name="JJB-Trial-Input" class="com.cdac.jjb.Actions.TrialProcessAction" method="popCCDetails">     
+       
+        <result name="success" type="tiles">JJB-Trial-Input</result>
+  </action>
+  
+  <action name="JJB-Trial-Form" class="com.cdac.jjb.Actions.TrialProcessAction" method="getCourtSurren">     
+       
+        <result name="success" type="tiles">JJB-Trial-Process</result>
+  </action>
+  
+  <action name="saveTrialProcess" class="com.cdac.jjb.Actions.TrialProcessAction">     
+       
+        <result name="success" type="tiles">JJB-Success</result>
+        <result name="error" type="tiles">JJB-Error</result>
+  </action>
+  
+  <action name="JJB-ViewEnq-Input" class="com.cdac.jjb.Actions.TrialProcessAction" method="popTrial">     
+       
+        <result name="success" type="tiles">JJB-ViewTrial-Input</result>
+       
+  </action>
+   <action name="JJB-View-TrDetails" class="com.cdac.jjb.Actions.TrialProcessAction" method="showTrial">     
+       
+        <result name="success">/WEB-INF/JJB/viewTrial.jsp</result>
+       
+  </action>
+ 
+    </package>
+</struts>
+
