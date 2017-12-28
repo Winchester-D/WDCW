@@ -7,9 +7,10 @@
 	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
 	<import value="java.lang.String"/>
 	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
-       <!-- <parameter name="PROFILE_ID" class="java.lang.String" isForPrompting="false"/> -->
+        <parameter name="PROFILE_ID" class="java.lang.String" isForPrompting="false"/>
+        <!--parameter name="WATERMARK_LOC" class="java.lang.String" isForPrompting="false"/ For Watermark    --> 
 	<queryString language="SQL">
-		<![CDATA[select * from FcForm19]]]>
+		<![CDATA[select * from fc_form19]]]>
 	</queryString>
 	<field name="id" class="java.lang.Integer">
 		<fieldDescription><![CDATA[]]></fieldDescription>
@@ -82,14 +83,29 @@
 	</field>
 	<background>
 		<band height="802" splitType="Stretch">
-			<rectangle radius="10">
+			<rectangle>
 				<reportElement x="4" y="0" width="548" height="789" forecolor="#993399" />
-			</rectangle>
+                        </rectangle>
+                        <!--        For Watermark     image>
+				<reportElement x="71" y="229" width="448" height="411"/>
+				<imageExpression><![CDATA[$P{WATERMARK_LOC}]]></imageExpression>
+			</image-->			
 		</band>
 	</background>
         
 	<title>
 		<band height="127" splitType="Stretch">
+                    <staticText>
+				<reportElement x="15" y="28" width="85" height="25" />
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ PROFILE ID: ]]></text>
+	           </staticText>
+                   	<textField>
+				<reportElement x="80" y="28" width="150" height="20" forecolor="#006400"/>
+				<textFieldExpression><![CDATA[$P{PROFILE_ID}]]></textFieldExpression>
+			</textField>
 			<staticText>
 				<reportElement x="233" y="78" width="85" height="25" />
 				<textElement>
@@ -118,7 +134,7 @@ createLinear(3, "123456789"))]]></imageExpression>
 	<pageHeader>
 		<band height="45" splitType="Stretch">
                     <rectangle>
-                        <reportElement x="19" y="0" width="524" height="43" forecolor="gray"/>
+                        <reportElement x="19" y="0" width="524" height="43" forecolor="black"/>
                     </rectangle>
 			<staticText>
 				<reportElement x="22" y="0" width="521" height="20" />

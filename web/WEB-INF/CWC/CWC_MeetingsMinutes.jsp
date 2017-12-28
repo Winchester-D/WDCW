@@ -97,7 +97,7 @@
                 
                  if($("#orderIssued").val()==='Interviewagian')
                  {
-                $(this).load('CWC_Meetings19Form',{'profile_id':$('#profile').val()},{'observations':$('#shashank').val()}).css('background-color','#ccffff');
+                $(this).load('CWC_Meetings19Form',{'profile_id':$('#profile').val()}).css('background-color','#ccffff');
 
                 
         
@@ -210,14 +210,14 @@
         
          
     <% String profile_id = ActionContext.getContext().getSession().get("foundhomeid").toString(); %> 
-    <% String observations = ActionContext.getContext().getSession().get("foundhomeid").toString();%>
+   
         <center>
             <b>Profile Id:</b><s:property value="foundchildprofileid"/><br/>
             <CAPTION><font size="3"><b><s:text name="global.heading.CWCMeetMinsReg"/>(Form32)</b></font></CAPTION> 
             
                 
             <input type="hidden" id="profile" name="profile" value="<%= profile_id %>"/>
-            <input type="hidden" id="shashank" name="shashank" value="<%= observations %>">
+           
             
        
 

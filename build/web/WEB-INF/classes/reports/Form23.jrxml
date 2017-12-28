@@ -47,7 +47,15 @@
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<background>
-		<band splitType="Stretch"/>
+		<band height="802" splitType="Stretch">
+			<rectangle>
+				<reportElement x="4" y="0" width="548" height="789" forecolor="#993399" />
+                        </rectangle>
+                        <!--        For Watermark     image>
+				<reportElement x="71" y="229" width="448" height="411"/>
+				<imageExpression><![CDATA[$P{WATERMARK_LOC}]]></imageExpression>
+			</image-->			
+		</band>
 	</background>
 	<title>
 		<band height="141" splitType="Stretch">
@@ -97,7 +105,7 @@ createLinear(3, "123456789"))]]></imageExpression>
 				<textElement>
 					<font size="11"/>
 				</textElement>
-				<text><![CDATA[  To 
+				<text><![CDATA[   To 
                 Child Welfare Committee, 
                 District………………. 
                 I/ We……………….........(name    of    the    applicant/s).... ……………. (relation    with    the    child) 

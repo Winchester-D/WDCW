@@ -44,7 +44,11 @@
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<background>
-		<band splitType="Stretch"/>
+		<band height="802" splitType="Stretch">
+                    	<rectangle radius="10">
+				<reportElement x="4" y="0" width="548" height="789" forecolor="#993399" />
+			</rectangle>
+                </band>
 	</background>
 	<title>
 		<band height="127" splitType="Stretch">
@@ -65,7 +69,7 @@
 createLinear(3, "123456789"))]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="160" y="98" width="170" height="20" />
+				<reportElement x="160" y="102" width="170" height="20" />
 				<textElement>
 					<font size="14"/>
 				</textElement>
@@ -76,7 +80,7 @@ createLinear(3, "123456789"))]]></imageExpression>
 	<pageHeader>
 		<band height="36" splitType="Stretch">
 			<staticText>
-				<reportElement x="55" y="10" width="496" height="20" />
+				<reportElement x="55" y="0" width="496" height="20" />
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
