@@ -263,6 +263,7 @@ public class CaseWorkerAction extends ActionSupport implements ServletRequestAwa
     private List<ChildDTO> childDTOList;
 
     private ServerMessageDTO serverMessage = new ServerMessageDTO();
+    private Object fcForm36;
 
     public ServerMessageDTO getServerMessage() {
         return serverMessage;
@@ -1460,7 +1461,7 @@ public class CaseWorkerAction extends ActionSupport implements ServletRequestAwa
     private FcForm33 fcForm33 = new FcForm33();
     private FcForm34 fcForm34 = new FcForm34();
     //private FcForm35 fcForm35 = new FcForm35();
-    private FcForm36 fcForm36 = new FcForm36();
+    
     private FcForm37 fcForm37 = new FcForm37();
     private FcForm38 fcForm38 = new FcForm38();
     private FcForm39 fcForm39 = new FcForm39();
@@ -5754,6 +5755,32 @@ public class CaseWorkerAction extends ActionSupport implements ServletRequestAwa
         System.out.println("ord-Spon-Pl->" + getFoundchildrenlist());
         return "success";
     }
+    
+    
+    private FcForm36 fc36 = new FcForm36();
+    
+    public FcForm36 getFc36()
+    {
+        return fc36;
+    }
+    
+    public void setFc36(FcForm36 fc36)
+    {
+        this.fc36 = fc36;
+    }
+    /*
+    private List<FcForm36> form36List = new ArrayList<FcForm36>();
+     
+    public List<FcForm36> getForm36List()
+    {
+        return form36List;
+    }
+    
+    public void setForm36List(List<FcForm36> form36List)
+    {
+        this.form36List = form36List;
+    }
+    */
     public String getForm36() {
         System.out.println("rep required******->Form36");
         String id = request.getParameter("sirChildPdf");

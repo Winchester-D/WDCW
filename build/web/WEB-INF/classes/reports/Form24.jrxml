@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form24" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Form24" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" >
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="494"/>
-          <import value="java.lang.Object"/>
+	<import value="java.lang.Object"/>
 	<import value="com.keepautomation.barcode.jasper.BarcodeRenderer"/>
 	<import value="java.lang.String"/>
 	<parameter name="TSLOGO_LOC" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="PROFILE_ID" class="java.lang.String" isForPrompting="false"/>
 	<queryString language="SQL">
 		<![CDATA[select * from form24]]>
 	</queryString>
@@ -52,7 +53,7 @@
 	<field name="cpWaddress1" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-        <field name="cpPlace1" class="java.lang.String">
+	<field name="cpPlace1" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="cpDate1" class="java.lang.String">
@@ -62,30 +63,36 @@
 		<band height="802" splitType="Stretch">
 			<rectangle>
 				<reportElement x="4" y="0" width="548" height="789" forecolor="#993399" />
-                        </rectangle>
-                        <!--        For Watermark     image>
-				<reportElement x="71" y="229" width="448" height="411"/>
-				<imageExpression><![CDATA[$P{WATERMARK_LOC}]]></imageExpression>
-			</image-->			
+			</rectangle>
 		</band>
 	</background>
-        
 	<title>
 		<band height="143" splitType="Stretch">
 			<staticText>
-				<reportElement x="241" y="61" width="63" height="20" />
+				<reportElement x="15" y="28" width="85" height="25" />
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ PROFILE ID: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="28" width="150" height="20" forecolor="#006400" />
+				<textFieldExpression><![CDATA[$P{PROFILE_ID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="241" y="69" width="63" height="20" />
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
-				<text><![CDATA[  FORM 24 ]]></text>
+				<text><![CDATA[  FORM 24  ]]></text>
 			</staticText>
 			<image>
-				<reportElement x="241" y="0" width="78" height="61" />
+				<reportElement x="241" y="6" width="78" height="61" />
 				<imageExpression><![CDATA[$P{TSLOGO_LOC}]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="432" y="17" width="100" height="50" />
-			<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
+				<reportElement x="430" y="0" width="100" height="50" />
+				<imageExpression class="net.sf.jasperreports.engine.JRRenderable"><![CDATA[new com.keepautomation.barcode.jasper.BarcodeRenderer(com.keepautomation.barcode.jasper.BarcodeFactory.
 createLinear(3, "123456789"))]]></imageExpression>
 			</image>
 			<staticText>
@@ -102,8 +109,11 @@ createLinear(3, "123456789"))]]></imageExpression>
 				</textElement>
 				<text><![CDATA[  DEED OF SURRENDER]]></text>
 			</staticText>
+			<rectangle>
+				<reportElement x="114" y="123" width="333" height="20" />
+			</rectangle>
 			<staticText>
-				<reportElement x="121" y="121" width="311" height="20" />
+				<reportElement x="126" y="123" width="311" height="20" />
 				<textElement>
 					<font size="12"/>
 				</textElement>
@@ -221,7 +231,7 @@ createLinear(3, "123456789"))]]></imageExpression>
 	<pageFooter>
 		<band height="257" splitType="Stretch">
 			<staticText>
-				<reportElement x="14" y="15" width="529" height="239" />
+				<reportElement x="14" y="8" width="529" height="239" />
 				<textElement>
 					<font size="11" isBold="false"/>
 				</textElement>
@@ -242,30 +252,29 @@ Done at ........................... on.................
                                                                                                                                            Signature & Seal of 
                                                                                                                                        Members/Chairperson 
                                                                                                                                     Child Welfare Committee ]]></text>
-                                                                                                                                    
 			</staticText>
 			<textField>
-				<reportElement x="37" y="82" width="77" height="15" forecolor="#3333FF" />
+				<reportElement x="37" y="78" width="77" height="15" forecolor="#3333FF" />
 				<textFieldExpression><![CDATA[$F{cpWname}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="37" y="97" width="89" height="14" forecolor="#3333FF" />
+				<reportElement x="37" y="90" width="89" height="14" forecolor="#3333FF" />
 				<textFieldExpression><![CDATA[$F{cpWaddress}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="37" y="122" width="89" height="17" forecolor="#3333FF" />
+				<reportElement x="37" y="119" width="89" height="17" forecolor="#3333FF" />
 				<textFieldExpression><![CDATA[$F{cpWname1}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="37" y="139" width="89" height="17" forecolor="#3333FF" />
+				<reportElement x="37" y="133" width="89" height="17" forecolor="#3333FF" />
 				<textFieldExpression><![CDATA[$F{cpWaddress1}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="61" y="191" width="69" height="20" forecolor="#3333FF" />
+				<reportElement x="61" y="188" width="69" height="20" forecolor="#3333FF" />
 				<textFieldExpression><![CDATA[$F{cpPlace1}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="161" y="191" width="72" height="20" forecolor="#3333FF" />
+				<reportElement x="161" y="188" width="72" height="20" forecolor="#3333FF" />
 				<textFieldExpression><![CDATA[$F{cpDate1}]]></textFieldExpression>
 			</textField>
 		</band>
